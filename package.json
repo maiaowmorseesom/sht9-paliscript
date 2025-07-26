@@ -16,6 +16,7 @@
     "paliscript": "./index.js"
   },
   "dependencies": {
+    "dotenv": "^17.2.1",
     "open": "^10.2.0"
   }
 }
