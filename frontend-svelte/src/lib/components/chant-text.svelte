@@ -15,6 +15,39 @@
 
 hello_worl1d_1ปารัมภะทวิ-วจนะfrom hello_worldอังคะjsทวิ-วจนะปริโยนาหะวิรามะ
 hello_world_2ปารัมภะทวิ-วจนะfrom hello_worldอังคะjsทวิ-วจนะปริโยนาหะวิรามะ
+
+อัจจุตะ hello_worl1d_1 สัมมา ปารัมภะargปริโยนาหะ สัมมาอธิกะ อารัมภะ
+    ธัมมะสักกะอังคะlogปารัมภะทวิ-วจนะHello Worldนะ ทวิ-วจนะสัมพันธะ argปริโยนาหะวิรามะ
+ปริปุญญะ
+
+กรณะ hello_world_2ปารัมภะargปริโยนาหะ อารัมภะ
+    ธัมมะสักกะอังคะlogปารัมภะทวิ-วจนะHello World 2นะทวิ-วจนะสัมพันธะ argปริโยนาหะวิรามะ
+ปริปุญญะ
+
+hello_worl1d_1ปารัมภะทวิ-วจนะfrom hello_worldอังคะjsทวิ-วจนะปริโยนาหะวิรามะ
+hello_world_2ปารัมภะทวิ-วจนะfrom hello_worldอังคะjsทวิ-วจนะปริโยนาหะวิรามะ
+
+อัจจุตะ hello_worl1d_1 สัมมา ปารัมภะargปริโยนาหะ สัมมาอธิกะ อารัมภะ
+    ธัมมะสักกะอังคะlogปารัมภะทวิ-วจนะHello Worldนะ ทวิ-วจนะสัมพันธะ argปริโยนาหะวิรามะ
+ปริปุญญะ
+
+กรณะ hello_world_2ปารัมภะargปริโยนาหะ อารัมภะ
+    ธัมมะสักกะอังคะlogปารัมภะทวิ-วจนะHello World 2นะทวิ-วจนะสัมพันธะ argปริโยนาหะวิรามะ
+ปริปุญญะ
+
+hello_worl1d_1ปารัมภะทวิ-วจนะfrom hello_worldอังคะjsทวิ-วจนะปริโยนาหะวิรามะ
+hello_world_2ปารัมภะทวิ-วจนะfrom hello_worldอังคะjsทวิ-วจนะปริโยนาหะวิรามะ
+
+อัจจุตะ hello_worl1d_1 สัมมา ปารัมภะargปริโยนาหะ สัมมาอธิกะ อารัมภะ
+    ธัมมะสักกะอังคะlogปารัมภะทวิ-วจนะHello Worldนะ ทวิ-วจนะสัมพันธะ argปริโยนาหะวิรามะ
+ปริปุญญะ
+
+กรณะ hello_world_2ปารัมภะargปริโยนาหะ อารัมภะ
+    ธัมมะสักกะอังคะlogปารัมภะทวิ-วจนะHello World 2นะทวิ-วจนะสัมพันธะ argปริโยนาหะวิรามะ
+ปริปุญญะ
+
+hello_worl1d_1ปารัมภะทวิ-วจนะfrom hello_worldอังคะjsทวิ-วจนะปริโยนาหะวิรามะ
+hello_world_2ปารัมภะทวิ-วจนะfrom hello_worldอังคะjsทวิ-วจนะปริโยนาหะวิรามะ
     `;
 </script>
 
@@ -35,28 +68,18 @@ hello_world_2ปารัมภะทวิ-วจนะfrom hello_worldอั�
             style="background-image: url({BorderAHorBottom}); height: {borderHeight};"
         ></div>
         <div
-            class="absolute px-[{borderHeight}] bottom-0 left-0 w-full transform bg-repeat-x"
+            class="absolute px-[{borderHeight}] bottom-0 left-0 w-full bg-repeat-x"
             style="background-image: url({BorderAHorBottom}); height: {borderHeight};"
         ></div>
 
-        <!-- Vertical Borders - Fixed approach -->
+        <!-- Vertical Borders -->
         <div
-            class="absolute top-0 left-0 h-full"
-            style="background-image: url({BorderAVertLeft}); background-repeat: repeat-y; width: {borderHeight}; transform-origin: top left;"
+            class="absolute top-0 left-0 h-full bg-repeat-y"
+            style="background-image: url({BorderAVertLeft}); width: {borderHeight};"
         ></div>
         <div
-            class="absolute top-0 right-0 h-full transform"
-            style="background-image: url({BorderAVertRight}); background-repeat: repeat-y; width: {borderHeight}; transform-origin: top right;"
+            class="absolute top-0 right-0 h-full bg-repeat-y"
+            style="background-image: url({BorderAVertRight}); width: {borderHeight};"
         ></div>
-
-        <!-- Corner pieces to cover gaps -->
-        <!-- <div class="absolute top-0 left-0 bg-no-repeat"
-           style="background-image: url({BorderA}); width: {borderHeight}; height: {borderHeight};"></div>
-      <div class="absolute top-0 right-0 bg-no-repeat transform rotate-90"
-           style="background-image: url({BorderA}); width: {borderHeight}; height: {borderHeight}; transform-origin: top right;"></div>
-      <div class="absolute bottom-0 left-0 bg-no-repeat transform -rotate-90"
-           style="background-image: url({BorderA}); width: {borderHeight}; height: {borderHeight}; transform-origin: bottom left;"></div>
-      <div class="absolute bottom-0 right-0 bg-no-repeat transform rotate-180"
-           style="background-image: url({BorderA}); width: {borderHeight}; height: {borderHeight};"></div> -->
     </div>
 </div>

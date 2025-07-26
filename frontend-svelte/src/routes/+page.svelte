@@ -4,8 +4,6 @@
 </script>
 
 <div class="w-full h-full min-h-screen grid grid-cols-2 gap-x-4">
-  <div class="w-full h-full">
-    <ChantText />
-  </div>
+  <ChantText />
   <AudioControl />
 </div>
