@@ -19,10 +19,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     convertBtn.textContent = 'Loading...';
 
     try {
-        // Fetch both JSON files in parallel
+        // Fetch both JSON files in parallel using absolute paths
         const [thPaliResponse, jsPaliResponse] = await Promise.all([
-            fetch('../json/th-pali-js-key.json'),
-            fetch('../json/js-pali-master.json')
+            fetch('/json/th-pali-js-key.json'),
+            fetch('/json/js-pali-master.json')
         ]);
 
         if (!thPaliResponse.ok || !jsPaliResponse.ok) {
