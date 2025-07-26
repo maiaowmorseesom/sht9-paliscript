@@ -1,0 +1,800 @@
+{
+  "วิจเฉทนะ": {
+    "eng-pali": "vicchedana",
+    "js": "break",
+    "phonetic-karaoke": "vich-chay-dah-nah",
+    "ipa": "ʋit͡ɕt̪͡ɕʰeːd̪ɐnɐ"
+  },
+  "อวัสสยะ": {
+    "eng-pali": "avassaya",
+    "js": "case",
+    "phonetic-karaoke": "ah-wut-sah-yah",
+    "ipa": "ɐʋɐssɐd͡ʒɐ"
+  },
+  "คหณะ": {
+    "eng-pali": "gahana",
+    "js": "catch",
+    "phonetic-karaoke": "gah-hah-nah",
+    "ipa": "gɐhɐnɐ"
+  },
+  "โคตมะ": {
+    "eng-pali": "gotama",
+    "js": "class",
+    "phonetic-karaoke": "goh-tah-mah",
+    "ipa": "goːt̪ɐmɐ"
+  },
+  "อัจจุตะ": {
+    "eng-pali": "ajjuta",
+    "js": "const",
+    "phonetic-karaoke": "ut-joo-tah",
+    "ipa": "ɐd͡ʒd͡ʒut̪ɐ"
+  },
+  "ปฏิจจะ": {
+    "eng-pali": "paṭicca",
+    "js": "continue",
+    "phonetic-karaoke": "pah-tich-chah",
+    "ipa": "pɐʈit͡ɕt͡ɕɐ"
+  },
+  "อันวิกขณา": {
+    "eng-pali": "anvikkhana",
+    "js": "debugger",
+    "phonetic-karaoke": "un-wik-kah-nah",
+    "ipa": "ɐnʋikkhɐnɐ"
+  },
+  "สภาวะ": {
+    "eng-pali": "sabhāva",
+    "js": "default",
+    "phonetic-karaoke": "sah-pah-wah",
+    "ipa": "sɐbʱaːʋɐ"
+  },
+  "อุจเฉทะ": {
+    "eng-pali": "uccheda",
+    "js": "delete",
+    "phonetic-karaoke": "oot-chay-tah",
+    "ipa": "ut͡ɕt̪͡ɕʰeːd̪ɐ"
+  },
+  "กัมมะ": {
+    "eng-pali": "kamma",
+    "js": "do",
+    "phonetic-karaoke": "kum-mah",
+    "ipa": "kɐmmɐ"
+  },
+  "อัญญัง": {
+    "eng-pali": "aññaṃ",
+    "js": "else",
+    "phonetic-karaoke": "un-nyang",
+    "ipa": "ɐɲɲɐŋ"
+  },
+  "นิยยาเทสนะ": {
+    "eng-pali": "niyyādesana",
+    "js": "export",
+    "phonetic-karaoke": "nit-yah-day-sah-nah",
+    "ipa": "nid͡ʒd͡ʒaːd̪eːsɐnɐ"
+  },
+  "ปฏิปัชชติ": {
+    "eng-pali": "paṭipajjati",
+    "js": "extends",
+    "phonetic-karaoke": "pah-ti-put-jut-ti",
+    "ipa": "pɐʈipɐd͡ʒd͡ʒɐt̪i"
+  },
+  "มิจฉา": {
+    "eng-pali": "micchā",
+    "js": "false",
+    "phonetic-karaoke": "mit-chah",
+    "ipa": "mit͡ɕt̪͡ɕʰaː"
+  },
+  "ปริณามะ": {
+    "eng-pali": "pariṇāma",
+    "js": "finally",
+    "phonetic-karaoke": "pah-ri-nah-mah",
+    "ipa": "pɐriɳaːmɐ"
+  },
+  "วัฏฏะ": {
+    "eng-pali": "vaṭṭa",
+    "js": "for",
+    "phonetic-karaoke": "wut-tah",
+    "ipa": "ʋɐʈʈɐ"
+  },
+  "กรณะ": {
+    "eng-pali": "karaṇa",
+    "js": "function",
+    "phonetic-karaoke": "kah-rah-nah",
+    "ipa": "kɐrɐɳɐ"
+  },
+  "ยทิ": {
+    "eng-pali": "yadi",
+    "js": "if",
+    "phonetic-karaoke": "yah-di",
+    "ipa": "d͡ʒɐd̪i"
+  },
+  "อาหรณะ": {
+    "eng-pali": "āharaṇa",
+    "js": "import",
+    "phonetic-karaoke": "ah-hah-rah-nah",
+    "ipa": "aːhɐrɐɳɐ"
+  },
+  "อันตะระ": {
+    "eng-pali": "antara",
+    "js": "in",
+    "phonetic-karaoke": "un-tah-rah",
+    "ipa": "ɐnt̪ɐrɐ"
+  },
+  "ปชาณติ": {
+    "eng-pali": "pajāṇati",
+    "js": "instanceof",
+    "phonetic-karaoke": "pah-jah-nah-ti",
+    "ipa": "pɐd͡ʒaːɳɐt̪i"
+  },
+  "นวะ": {
+    "eng-pali": "nava",
+    "js": "new",
+    "phonetic-karaoke": "nah-wah",
+    "ipa": "nɐʋɐ"
+  },
+  "สุญญะ": {
+    "eng-pali": "suñña",
+    "js": "null",
+    "phonetic-karaoke": "soon-yah",
+    "ipa": "suɲɲɐ"
+  },
+  "ปฏิวินีตะ": {
+    "eng-pali": "paṭivinīta",
+    "js": "return",
+    "phonetic-karaoke": "pah-ti-wi-nee-tah",
+    "ipa": "pɐʈiʋiniːt̪ɐ"
+  },
+  "อธิปติ": {
+    "eng-pali": "adhipati",
+    "js": "super",
+    "phonetic-karaoke": "ah-ti-pah-ti",
+    "ipa": "ɐd̪̪ʱipɐt̪i"
+  },
+  "ปริวัตตะนะ": {
+    "eng-pali": "parivattana",
+    "js": "switch",
+    "phonetic-karaoke": "pah-ri-wut-tah-nah",
+    "ipa": "pɐriʋɐt̪t̪ɐnɐ"
+  },
+  "อัตตา": {
+    "eng-pali": "attā",
+    "js": "this",
+    "phonetic-karaoke": "ut-tah",
+    "ipa": "ɐt̪t̪aː"
+  },
+  "วิกขิปติ": {
+    "eng-pali": "vikkhittati",
+    "js": "throw",
+    "phonetic-karaoke": "wik-khit-tah-ti",
+    "ipa": "ʋikkhit̪t̪ɐt̪i"
+  },
+  "สัจจะ": {
+    "eng-pali": "sacca",
+    "js": "true",
+    "phonetic-karaoke": "sut-chah",
+    "ipa": "sɐt͡ɕt͡ɕɐ"
+  },
+  "วีมังสา": {
+    "eng-pali": "vīmaṃsā",
+    "js": "try",
+    "phonetic-karaoke": "wee-mung-sah",
+    "ipa": "ʋiːmɐŋsaː"
+  },
+  "ชาติ": {
+    "eng-pali": "jāti",
+    "js": "Type",
+    "phonetic-karaoke": "jah-ti",
+    "ipa": "d͡ʒaːt̪i"
+  },
+  "นามะ": {
+    "eng-pali": "nāma",
+    "js": "var",
+    "phonetic-karaoke": "nah-mah",
+    "ipa": "naːmɐ"
+  },
+  "สุญญตา": {
+    "eng-pali": "suññatā",
+    "js": "void",
+    "phonetic-karaoke": "soon-yah-tah",
+    "ipa": "suɲɲɐt̪aː"
+  },
+  "ยาวะ": {
+    "eng-pali": "yāva",
+    "js": "while",
+    "phonetic-karaoke": "yah-wah",
+    "ipa": "d͡ʒaːʋɐ"
+  },
+  "สหะ": {
+    "eng-pali": "saha",
+    "js": "with",
+    "phonetic-karaoke": "sah-hah",
+    "ipa": "sɐhɐ"
+  },
+  "นิจฌานะ": {
+    "eng-pali": "nicjhāna",
+    "js": "yield",
+    "phonetic-karaoke": "nit-jah-nah",
+    "ipa": "nit͡ɕd̪͡ʒʱaːnɐ"
+  },
+  "ปฏีกขณะ": {
+    "eng-pali": "paṭikkhaṇa",
+    "js": "await",
+    "phonetic-karaoke": "ah-tik-kah-mah",
+    "ipa": "pɐʈikkhɐɳɐ"
+  },
+  "สังขิตตะ": {
+    "eng-pali": "saṅkhitta",
+    "js": "abstract",
+    "phonetic-karaoke": "sung-khit-tah",
+    "ipa": "sɐŋkhit̪t̪ɐ"
+  },
+  "ทวยะ": {
+    "eng-pali": "dvaya",
+    "js": "boolean",
+    "phonetic-karaoke": "dwah-yah",
+    "ipa": "d̪ʋɐd͡ʒɐ"
+  },
+  "อณุ": {
+    "eng-pali": "aṇu",
+    "js": "byte",
+    "phonetic-karaoke": "ah-noo",
+    "ipa": "ɐɳu"
+  },
+  "อักขระ": {
+    "eng-pali": "akkhara",
+    "js": "char",
+    "phonetic-karaoke": "uk-khah-rah",
+    "ipa": "ɐkkhɐrɐ"
+  },
+  "ทฺเวคูณ": {
+    "eng-pali": "dveguṇa",
+    "js": "double",
+    "phonetic-karaoke": "dway-goon",
+    "ipa": "d̪ʋeːguɳɐ"
+  },
+  "คณะ": {
+    "eng-pali": "gaṇa",
+    "js": "enum",
+    "phonetic-karaoke": "gah-nah",
+    "ipa": "gɐɳɐ"
+  },
+  "ปริโยสานะ": {
+    "eng-pali": "pariyosāna",
+    "js": "final",
+    "phonetic-karaoke": "pah-ri-yoh-sah-nah",
+    "ipa": "pɐrid͡ʒoːsaːnɐ"
+  },
+  "อุมมัคคะ": {
+    "eng-pali": "ummāgga",
+    "js": "float",
+    "phonetic-karaoke": "oom-muk-khah",
+    "ipa": "ummaːggɐ"
+  },
+  "ตตฺถ-ตตฺถ": {
+    "eng-pali": "tatth-tatth",
+    "js": "goto",
+    "phonetic-karaoke": "tut-tah-tut-tah",
+    "ipa": "t̪ɐt̪t̪̪ʰ-t̪ɐt̪t̪̪ʰ"
+  },
+  "ปฏิปัตติ": {
+    "eng-pali": "paṭipatti",
+    "js": "implements",
+    "phonetic-karaoke": "pah-ti-put-ti",
+    "ipa": "pɐʈipɐt̪t̪i"
+  },
+  "สังขยา": {
+    "eng-pali": "saṅkhyā",
+    "js": "Number",
+    "phonetic-karaoke": "sung-kah-yah",
+    "ipa": "sɐŋkhd͡ʒaː"
+  },
+  "ปฏิญญา": {
+    "eng-pali": "paṭiññā",
+    "js": "interface",
+    "phonetic-karaoke": "pah-tin-yah",
+    "ipa": "pɐʈiɲɲaː"
+  },
+  "ทีฆะ": {
+    "eng-pali": "dīgha",
+    "js": "long",
+    "phonetic-karaoke": "dee-gah",
+    "ipa": "d̪iːghɐ"
+  },
+  "สหชาตะ": {
+    "eng-pali": "sahajāta",
+    "js": "native",
+    "phonetic-karaoke": "sah-hah-jah-tah",
+    "ipa": "sɐhɐd͡ʒaːt̪ɐ"
+  },
+  "สังคหะ": {
+    "eng-pali": "saṅgaha",
+    "js": "package",
+    "phonetic-karaoke": "sung-gah-hah",
+    "ipa": "sɐŋgɐhɐ"
+  },
+  "รหะ": {
+    "eng-pali": "raha",
+    "js": "private",
+    "phonetic-karaoke": "rah-hah",
+    "ipa": "rɐhɐ"
+  },
+  "คุตตะ": {
+    "eng-pali": "gutta",
+    "js": "protected",
+    "phonetic-karaoke": "goot-tah",
+    "ipa": "gut̪t̪ɐ"
+  },
+  "ปาปะกะ": {
+    "eng-pali": "pāpakka",
+    "js": "public",
+    "phonetic-karaoke": "pah-pah-kah",
+    "ipa": "paːpɐkkɐ"
+  },
+  "ลหุกะ": {
+    "eng-pali": "lahuka",
+    "js": "short",
+    "phonetic-karaoke": "lah-hoo-kah",
+    "ipa": "lɐhukɐ"
+  },
+  "นิจจะ": {
+    "eng-pali": "nicca",
+    "js": "static",
+    "phonetic-karaoke": "nit-chah",
+    "ipa": "nit͡ɕt͡ɕɐ"
+  },
+  "สมาปัตติ": {
+    "eng-pali": "samāpatti",
+    "js": "synchronized",
+    "phonetic-karaoke": "sah-mah-put-ti",
+    "ipa": "sɐmaːpɐt̪t̪i"
+  },
+  "ปฏิชฌติ": {
+    "eng-pali": "paṭijjhāti",
+    "js": "throws",
+    "phonetic-karaoke": "pah-tit-jah-ti",
+    "ipa": "pɐʈid͡ʒd̪͡ʒʱaːt̪i"
+  },
+  "อนิจจะ": {
+    "eng-pali": "anicca",
+    "js": "transient",
+    "phonetic-karaoke": "ah-nit-chah",
+    "ipa": "ɐnit͡ɕt͡ɕɐ"
+  },
+  "จลจล": {
+    "eng-pali": "calacala",
+    "js": "volatile",
+    "phonetic-karaoke": "jah-lah-jah-lah",
+    "ipa": "t͡ɕɐlɐt͡ɕɐlɐ"
+  },
+  "อุปหาระ": {
+    "eng-pali": "upahāra",
+    "js": "arguments",
+    "phonetic-karaoke": "oo-pah-hah-rah",
+    "ipa": "upɐhaːrɐ"
+  },
+  "อักขาติ": {
+    "eng-pali": "akkhāti",
+    "js": "Eval",
+    "phonetic-karaoke": "uk-khah-ti",
+    "ipa": "ɐkkhaːt̪i"
+  },
+  "ฐปิตะ": {
+    "eng-pali": "ṭhapita",
+    "js": "let",
+    "phonetic-karaoke": "tah-pi-tah",
+    "ipa": "ʈhɐpit̪ɐ"
+  },
+  "อนันตะ": {
+    "eng-pali": "ananta",
+    "js": "Infinity",
+    "phonetic-karaoke": "ah-nun-tah",
+    "ipa": "ɐnɐnt̪ɐ"
+  },
+  "อสังขยะ": {
+    "eng-pali": "asaṅkhyeya",
+    "js": "NaN",
+    "phonetic-karaoke": "ah-sung-kay-yah",
+    "ipa": "ɐsɐŋkhd͡ʒeːd͡ʒɐ"
+  },
+  "อวกาสะ": {
+    "eng-pali": "avakāsa",
+    "js": "undefined",
+    "phonetic-karaoke": "ah-wah-kah-sah",
+    "ipa": "ɐʋɐkaːsɐ"
+  },
+  "นามรูป": {
+    "eng-pali": "nāmarūpa",
+    "js": "Object",
+    "phonetic-karaoke": "nah-mah-roo-pah",
+    "ipa": "naːmɐruːpɐ"
+  },
+  "การณะ": {
+    "eng-pali": "kāraṇa",
+    "js": "Function",
+    "phonetic-karaoke": "kah-rah-nah",
+    "ipa": "kaːrɐɳɐ"
+  },
+  "คณนา": {
+    "eng-pali": "gaṇanā",
+    "js": "Array",
+    "phonetic-karaoke": "gah-nah-nah",
+    "ipa": "gɐɳɐnaː"
+  },
+  "ปะทะ": {
+    "eng-pali": "pada",
+    "js": "String",
+    "phonetic-karaoke": "pah-tah",
+    "ipa": "pɐd̪ɐ"
+  },
+  "ทวิปทา": {
+    "eng-pali": "dvipada",
+    "js": "Boolean",
+    "phonetic-karaoke": "dwi-pah-dah",
+    "ipa": "d̪ʋipɐd̪ɐ"
+  },
+  "ลักขณะ": {
+    "eng-pali": "lakkhaṇa",
+    "js": "Symbol",
+    "phonetic-karaoke": "luk-khah-nah",
+    "ipa": "lɐkkhɐɳɐ"
+  },
+  "มหา-สังขยา": {
+    "eng-pali": "mahā-saṅkhyā",
+    "js": "BigInt",
+    "phonetic-karaoke": "mah-hah-sung-kah-yah",
+    "ipa": "mɐhaː-sɐŋkhd͡ʒaː"
+  },
+  "ยุคะ": {
+    "eng-pali": "yuga",
+    "js": "Map",
+    "phonetic-karaoke": "yoo-gah",
+    "ipa": "d͡ʒugɐ"
+  },
+  "นิปปริยายะ": {
+    "eng-pali": "nippariyāya",
+    "js": "Set",
+    "phonetic-karaoke": "nip-pah-ri-yah-yah",
+    "ipa": "nippɐrid͡ʒaːd͡ʒɐ"
+  },
+  "ทุพพละ": {
+    "eng-pali": "dubbala",
+    "js": "Weak",
+    "phonetic-karaoke": "doop-bah-lah",
+    "ipa": "d̪ubbɐlɐ"
+  },
+  "ทุพพละ-นิปปริยายะ": {
+    "eng-pali": "dubbala-nippariyāya",
+    "js": "WeakSet",
+    "phonetic-karaoke": "doop-bah-lah-nip-pah-ri-yah-yah",
+    "ipa": "d̪ubbɐlɐ-nippɐrid͡ʒaːd͡ʒɐ"
+  },
+  "กาละ": {
+    "eng-pali": "kāla",
+    "js": "Date",
+    "phonetic-karaoke": "kah-lah",
+    "ipa": "kaːlɐ"
+  },
+  "ลักขณา-นิยามะ": {
+    "eng-pali": "lakkhaṇā-niyāma",
+    "js": "RegExp",
+    "phonetic-karaoke": "luk-khah-nah-nit-yah-mah",
+    "ipa": "lɐkkhɐɳaː-nid͡ʒaːmɐ"
+  },
+  "ทุกขะ": {
+    "eng-pali": "dukkha",
+    "js": "Error",
+    "phonetic-karaoke": "dook-khah",
+    "ipa": "d̪ukkhɐ"
+  },
+  "ปริยามะนะ-ทุกขะ": {
+    "eng-pali": "pariyāman",
+    "js": "Range",
+    "phonetic-karaoke": "pah-ri-yah-mun",
+    "ipa": "pɐrid͡ʒaːmɐn"
+  },
+  "อธิฏฐานะ": {
+    "eng-pali": "adhiṭṭhāna",
+    "js": "Reference",
+    "phonetic-karaoke": "ah-tit-thah-nah",
+    "ipa": "ɐd̪̪ʱiʈʈhaːnɐ"
+  },
+  "วยากะระณะ-ทุกขะ": {
+    "eng-pali": "vyākaraṇa",
+    "js": "Syntax",
+    "phonetic-karaoke": "wah-yah-kah-rah-nah",
+    "ipa": "ʋd͡ʒaːkɐrɐɳɐ"
+  },
+  "มัคคะ": {
+    "eng-pali": "magga",
+    "js": "URI",
+    "phonetic-karaoke": "muk-khah",
+    "ipa": "mɐggɐ"
+  },
+  "อสังขเยโย": {
+    "eng-pali": "asaṅkhyeyo",
+    "js": "isNaN",
+    "phonetic-karaoke": "ah-sung-kay-yoh",
+    "ipa": "ɐsɐŋkhd͡ʒeːd͡ʒoː"
+  },
+  "สีมาวตี": {
+    "eng-pali": "sīmāvatī",
+    "js": "isFinite",
+    "phonetic-karaoke": "see-mah-wah-tee",
+    "ipa": "siːmaːʋɐt̪iː"
+  },
+  "สังขยา-คหณะ": {
+    "eng-pali": "saṅkhyā-gahana",
+    "js": "parseInt",
+    "phonetic-karaoke": "sung-kah-yah-gah-hah-nah",
+    "ipa": "sɐŋkhd͡ʒaː-gɐhɐnɐ"
+  },
+  "อุมมัคคะ-สังขยา-คหณะ": {
+    "eng-pali": "ummāgga-saṅkhyā-gahana",
+    "js": "parseFloat",
+    "phonetic-karaoke": "oom-muk-khah-sung-kah-yah-gah-hah-nah",
+    "ipa": "ummaːggɐ-sɐŋkhd͡ʒaː-gɐhɐnɐ"
+  },
+  "สังเกตะ": {
+    "eng-pali": "saṅketa",
+    "js": "encode",
+    "phonetic-karaoke": "sung-kay-tah",
+    "ipa": "sɐŋkeːt̪ɐ"
+  },
+  "วิสังเกตะ": {
+    "eng-pali": "visaṅketa",
+    "js": "decode",
+    "phonetic-karaoke": "wi-sung-kay-tah",
+    "ipa": "ʋisɐŋkeːt̪ɐ"
+  },
+  "อังคะ": {
+    "eng-pali": "aṅga",
+    "js": ".",
+    "phonetic-karaoke": "ung-gah",
+    "ipa": "ɐŋgɐ"
+  },
+  "ปัตถกะ": {
+    "eng-pali": "patthaka",
+    "js": "document",
+    "phonetic-karaoke": "put-tah-kah",
+    "ipa": "pɐt̪t̪̪ʰɐkɐ"
+  },
+  "โลกะ": {
+    "eng-pali": "loka",
+    "js": "window",
+    "phonetic-karaoke": "loh-kah",
+    "ipa": "loːkɐ"
+  },
+  "สัพพะ-อัตตา": {
+    "eng-pali": "sabba-attā",
+    "js": "globalThis",
+    "phonetic-karaoke": "sup-pah-ut-tah",
+    "ipa": "sɐbbɐ-ɐt̪t̪aː"
+  },
+  "ธัมมะสักกะ": {
+    "eng-pali": "dhamma-sākka",
+    "js": "console",
+    "phonetic-karaoke": "tum-mah-suk-kah",
+    "ipa": "d̪̪ʱɐmmɐ-saːkkɐ"
+  },
+  "นิกเขปะนะ": {
+    "eng-pali": "nikkhepana",
+    "js": "JSON",
+    "phonetic-karaoke": "nit-khay-pah-nah",
+    "ipa": "nikkheːpɐnɐ"
+  },
+  "คณิตะ": {
+    "eng-pali": "gaṇita",
+    "js": "Math",
+    "phonetic-karaoke": "gah-nit-tah",
+    "ipa": "gɐɳit̪ɐ"
+  },
+  "ปฏิญญาณะ": {
+    "eng-pali": "paṭiññāṇa",
+    "js": "Promise",
+    "phonetic-karaoke": "pah-tin-yah-nah",
+    "ipa": "pɐʈiɲɲaːɳɐ"
+  },
+  "ปฏิรูปกะ": {
+    "eng-pali": "paṭirūpaka",
+    "js": "Proxy",
+    "phonetic-karaoke": "pah-ti-roo-pah-kah",
+    "ipa": "pɐʈiruːpɐkɐ"
+  },
+  "ปฏิพิมพะ": {
+    "eng-pali": "paṭibimba",
+    "js": "Reflect",
+    "phonetic-karaoke": "pah-ti-bim-pah",
+    "ipa": "pɐʈibimbɐ"
+  },
+  "ภาสา-ปฏิเวธะ": {
+    "eng-pali": "bhāsā-paṭivedha",
+    "js": "Intl",
+    "phonetic-karaoke": "pah-sah-pah-ti-way-tah",
+    "ipa": "bʱaːsaː-pɐʈiʋeːd̪̪ʱɐ"
+  },
+  "ชาละพันธะ": {
+    "eng-pali": "jālabaṇḍha",
+    "js": "WebAssembly",
+    "phonetic-karaoke": "jah-lah-bun-tah",
+    "ipa": "d͡ʒaːlɐbɐɳɖhɐ"
+  },
+  "อพยาพาธะ": {
+    "eng-pali": "abyābādha",
+    "js": "Atomics",
+    "phonetic-karaoke": "ah-bah-yah-bah-tah",
+    "ipa": "ɐbd͡ʒaːbaːd̪̪ʱɐ"
+  },
+  "สาธารณะ-อายตนะ": {
+    "eng-pali": "sādhāraṇa-āyatana",
+    "js": "SharedArrayBuffer",
+    "phonetic-karaoke": "sah-tah-rah-nah-ah-yah-tah-nah",
+    "ipa": "saːd̪̪ʱaːrɐɳɐ-aːd͡ʒɐt̪ɐnɐ"
+  },
+  "อติกฺกมะ": {
+    "eng-pali": "atikkama",
+    "js": "async",
+    "phonetic-karaoke": "ah-tik-kah-mah",
+    "ipa": "ɐt̪ikkɐmɐ"
+  },
+  "สัมมา": {
+    "eng-pali": "sama",
+    "js": "=",
+    "phonetic-karaoke": "sah-mah",
+    "ipa": "sɐmɐ"
+  },
+  "นะ-สะมะ": {
+    "eng-pali": "na-sama",
+    "js": "!=",
+    "phonetic-karaoke": "nah-sah-mah",
+    "ipa": "nɐ-sɐmɐ"
+  },
+  "วัฑฒะติ": {
+    "eng-pali": "vaḍḍhati",
+    "js": "+",
+    "phonetic-karaoke": "wut-tah-ti",
+    "ipa": "ʋɐɖɖhɐt̪i"
+  },
+  "อปกัสสะ": {
+    "eng-pali": "apakassa",
+    "js": "-",
+    "phonetic-karaoke": "ah-pah-kus-sah",
+    "ipa": "ɐpɐkɐssɐ"
+  },
+  "คุณะ": {
+    "eng-pali": "guṇa",
+    "js": "*",
+    "phonetic-karaoke": "goo-nah",
+    "ipa": "guɳɐ"
+  },
+  "วิภัชชะติ": {
+    "eng-pali": "vibhajati",
+    "js": "/",
+    "phonetic-karaoke": "wi-put-jah-ti",
+    "ipa": "ʋibʱɐd͡ʒɐt̪i"
+  },
+  "อวสิฏฐะ": {
+    "eng-pali": "avasiṭṭha",
+    "js": "%",
+    "phonetic-karaoke": "ah-wah-sit-thah",
+    "ipa": "ɐʋɐsiʈʈhɐ"
+  },
+  "อธิกะ": {
+    "eng-pali": "adhika",
+    "js": ">",
+    "phonetic-karaoke": "ah-ti-kah",
+    "ipa": "ɐd̪̪ʱikɐ"
+  },
+  "หีน": {
+    "eng-pali": "hīna",
+    "js": "<",
+    "phonetic-karaoke": "hee-nah",
+    "ipa": "hiːnɐ"
+  },
+  "นะ": {
+    "eng-pali": "na",
+    "js": "!",
+    "phonetic-karaoke": "nah",
+    "ipa": "nɐ"
+  },
+  "สังยุตตะ": {
+    "eng-pali": "saṃyutta",
+    "js": "&",
+    "phonetic-karaoke": "sung-yoot-tah",
+    "ipa": "sɐŋd͡ʒut̪t̪ɐ"
+  },
+  "วิเภทะ": {
+    "eng-pali": "vibheda",
+    "js": "|",
+    "phonetic-karaoke": "wi-pay-tah",
+    "ipa": "ʋibʱeːd̪ɐ"
+  },
+  "วิมุตตะ": {
+    "eng-pali": "vimutta",
+    "js": "^",
+    "phonetic-karaoke": "wi-moot-tah",
+    "ipa": "ʋimut̪t̪ɐ"
+  },
+  "วิปะรีตะ": {
+    "eng-pali": "viparīta",
+    "js": "~",
+    "phonetic-karaoke": "wi-pah-ree-tah",
+    "ipa": "ʋipɐriːt̪ɐ"
+  },
+  "ปารัมภะ": {
+    "eng-pali": "ārambha",
+    "js": "(",
+    "phonetic-karaoke": "pah-rum-pah",
+    "ipa": "aːrɐmbʱɐ"
+  },
+  "ปริโยนาหะ": {
+    "eng-pali": "pariyonāha",
+    "js": ")",
+    "phonetic-karaoke": "pah-ri-yoh-nah-hah",
+    "ipa": "pɐrid͡ʒoːnaːhɐ"
+  },
+  "ปวารณะ": {
+    "eng-pali": "pavāraṇa",
+    "js": "[",
+    "phonetic-karaoke": "pah-wah-rah-nah",
+    "ipa": "pɐʋaːrɐɳɐ"
+  },
+  "สังวร": {
+    "eng-pali": "saṃvara",
+    "js": "]",
+    "phonetic-karaoke": "sung-wah-rah",
+    "ipa": "sɐŋʋɐrɐ"
+  },
+  "อารัมภะ": {
+    "eng-pali": "ārambha",
+    "js": "{",
+    "phonetic-karaoke": "ah-rum-pah",
+    "ipa": "aːrɐmbʱɐ"
+  },
+  "ปริปุญญะ": {
+    "eng-pali": "paripuñña",
+    "js": "}",
+    "phonetic-karaoke": "pah-ri-poon-yah",
+    "ipa": "pɐripuɲɲɐ"
+  },
+  "ทวิ-วจนะ": {
+    "eng-pali": "dvi-vacana",
+    "js": "\"",
+    "phonetic-karaoke": "dwi-wah-jah-nah",
+    "ipa": "d̪ʋi-ʋɐt͡ɕɐnɐ"
+  },
+  "เอกะ-วจนะ": {
+    "eng-pali": "eka-vacana",
+    "js": "'",
+    "phonetic-karaoke": "ay-kah-wah-jah-nah",
+    "ipa": "eːkɐ-ʋɐt͡ɕɐnɐ"
+  },
+  "สุตตันตะ-มุขา/สุตตันตะ-นิฏฐิตะ": {
+    "eng-pali": "suttaṇta-mukhā/suttaṇta-niṭṭhita",
+    "js": "`",
+    "phonetic-karaoke": "soot-tun-tah-moo-khah/soot-tun-tah-nit-tah-tah",
+    "ipa": "sut̪t̪ɐɳt̪ɐ-mukhaː/sut̪t̪ɐɳt̪ɐ-niʈʈhit̪ɐ"
+  },
+  "วิรามะ": {
+    "eng-pali": "virāma",
+    "js": ";",
+    "phonetic-karaoke": "wi-rah-mah",
+    "ipa": "ʋiraːmɐ"
+  },
+  "สัมพันธะ": {
+    "eng-pali": "sambandha",
+    "js": ",",
+    "phonetic-karaoke": "sum-pun-tah",
+    "ipa": "sɐmbɐnd̪̪ʱɐ"
+  },
+  "สัญญา": {
+    "eng-pali": "saññā",
+    "js": ":",
+    "phonetic-karaoke": "sun-yah",
+    "ipa": "sɐɲɲaː"
+  },
+  "กัจจิ": {
+    "eng-pali": "kacci",
+    "js": "?",
+    "phonetic-karaoke": "kut-ji",
+    "ipa": "kɐt͡ɕt͡ɕi"
+  }
+}
