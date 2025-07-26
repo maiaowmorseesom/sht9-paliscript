@@ -1,5 +1,6 @@
 {
   "name": "sht9-paliscript",
+  "workspaces": ["frontend-svelte"],
   "version": "1.0.0",
   "description": "Holy Library",
   "repository": {
