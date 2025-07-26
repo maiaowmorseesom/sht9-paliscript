@@ -1,8 +1,14 @@
-const fs = require("fs/promises");
-const path = require("path");
+import fs from "fs/promises";
+import path from "path";
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
 
-// Load the conversion map from js-pali-master.json
-const jsToPaliMap = require("../json/js-pali-master.json");
+// Get the directory name using ES module approach
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+// We'll load the JSON file using fs.readFile
+let jsToPaliMap;
 
 /**
  * Escapes special characters in a string for use in a regular expression.
@@ -28,7 +34,14 @@ function convertText(text) {
   return text.replace(regex, (matched) => map[matched]["th-pali"]);
 }
 
-module.exports = async (args) => {
+export default async (args) => {
+  // Load the JSON file if not already loaded
+  if (!jsToPaliMap) {
+    const jsonPath = path.join(dirname(__dirname), 'json', 'js-pali-master.json');
+    const jsonData = await fs.readFile(jsonPath, 'utf-8');
+    jsToPaliMap = JSON.parse(jsonData);
+  }
+
   await Promise.all(
     args.map(async (file) => {
       try {
