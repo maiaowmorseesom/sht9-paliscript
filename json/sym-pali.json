@@ -1,0 +1,208 @@
+{
+  "sym-pali-mapped": {
+    "=": {
+      "pali": "Saṃyojana",
+      "description": "JS: `=` (Assignment) - Assigns a value to a variable. Pali: 'Fetter, bond, attachment.' - Creating a bond or attachment, assigning a specific value to a concept or entity."
+    },
+    "===": {
+      "pali": "Sama-Sama-Sama",
+      "description": "JS: `===` (Strict Equality) - Checks for equality of value AND type, no type coercion. Pali: 'Equal-equal-equal (Ultimate Equality).' - Ascertaining ultimate equality, where both form and essence are identical, with no hidden transformations."
+    },
+    "!==": {
+      "pali": "Na-Sama-Sama-Sama",
+      "description": "JS: `!==` (Strict Inequality) - Checks for inequality of value OR type. Pali: 'Not-Equal-Equal-Equal (Ultimate Inequality).' - Discerning ultimate difference, where either form or essence is not identical."
+    },
+    "==": {
+      "pali": "Sama",
+      "description": "JS: `==` (Loose Equality) - Checks for equality of value with type coercion. Pali: 'Equal, same.' - Ascertaining superficial equality, where forms might differ but essence can be coaxed to match."
+    },
+    "!=": {
+      "pali": "Na-Sama",
+      "description": "JS: `!=` (Loose Inequality) - Checks for inequality of value with type coercion. Pali: 'Not-equal, different.' - Discerning superficial difference, even if essences can be coerced to match."
+    },
+    "+": {
+      "pali": "Vaḍḍhati",
+      "description": "JS: `+` (Addition/Concatenation) - Numerical addition or string concatenation. Pali: 'To grow, to increase, to prosper.' - Increasing in number, or expanding the sequence of words."
+    },
+    "-": {
+      "pali": "Apakassa",
+      "description": "JS: `-` (Subtraction) - Numerical subtraction. Pali: 'To draw back, to remove, to diminish.' - Diminishing in number, withdrawing from a sum."
+    },
+    "*": {
+      "pali": "Guṇa",
+      "description": "JS: `*` (Multiplication) - Numerical multiplication. Pali: 'Multiply, quality, rope.' - To increase manifold, or to entangle various quantities."
+    },
+    "/": {
+      "pali": "Vibhajati",
+      "description": "JS: `/` (Division) - Numerical division. Pali: 'To divide, to distribute, to distinguish.' - To divide a whole into parts, distinguishing their individual shares."
+    },
+    "%": {
+      "pali": "Avasiṭṭha",
+      "description": "JS: `%` (Modulo) - Returns the remainder of a division. Pali: 'Remainder, what is left over.' - That which remains after a complete division, the residue."
+    },
+    "**": {
+      "pali": "Bala-vaḍḍhati",
+      "description": "JS: `**` (Exponentiation) - Raises the base to the exponent power. Pali: 'Power-increase, strengthening.' - Increasing strength or power exponentially, raising to a higher state."
+    },
+    "++": {
+      "pali": "Paripūraṇa",
+      "description": "JS: `++` (Increment) - Increases a variable by one. Pali: 'Completion, fulfillment, filling up.' - The subtle act of moving towards completion by a single unit."
+    },
+    "--": {
+      "pali": "Apacaya",
+      "description": "JS: `--` (Decrement) - Decreases a variable by one. Pali: 'Diminution, decrease, decay.' - The subtle act of diminishing by a single unit, moving towards decay."
+    },
+    ">": {
+      "pali": "Adhika",
+      "description": "JS: `>` (Greater Than) - Checks if the left operand is greater than the right. Pali: 'More than, additional, superior.' - To be superior in quantity or value."
+    },
+    "<": {
+      "pali": "Hīna",
+      "description": "JS: `<` (Less Than) - Checks if the left operand is less than the right. Pali: 'Inferior, deficient, low.' - To be inferior in quantity or value."
+    },
+    ">=": {
+      "pali": "Adhika-vā-Sama",
+      "description": "JS: `>=` (Greater Than or Equal To) - Checks if the left operand is greater than or equal to the right. Pali: 'More than or Equal.' - To be superior or at least equal in state."
+    },
+    "<=": {
+      "pali": "Hīna-vā-Sama",
+      "description": "JS: `<=` (Less Than or Equal To) - Checks if the left operand is less than or equal to the right. Pali: 'Less than or Equal.' - To be inferior or at least equal in state."
+    },
+    "&&": {
+      "pali": "Ubho",
+      "description": "JS: `&&` (Logical AND) - Returns true if both operands are true. Pali: 'Both, in both ways.' - When both conditions are true, a dual affirmation."
+    },
+    "||": {
+      "pali": "Athavā",
+      "description": "JS: `||` (Logical OR) - Returns true if at least one operand is true. Pali: 'Or, or else.' - When at least one of the conditions holds true, an alternative path."
+    },
+    "!": {
+      "pali": "Na",
+      "description": "JS: `!` (Logical NOT) - Inverts the boolean value. Pali: 'No, not, negation.' - The act of negation, turning truth into falsehood and vice-versa."
+    },
+    "&": {
+      "pali": "Saṃyutta",
+      "description": "JS: `&` (Bitwise AND) - Performs a bitwise AND operation. Pali: 'Connected, conjoined.' - A deep, bit-level conjunction, uniting corresponding essences."
+    },
+    "|": {
+      "pali": "Vibheda",
+      "description": "JS: `|` (Bitwise OR) - Performs a bitwise OR operation. Pali: 'Separation, distinction (often implying alternatives).' - A deep, bit-level alternative, allowing for distinct paths to coexist."
+    },
+    "^": {
+      "pali": "Vimutta",
+      "description": "JS: `^` (Bitwise XOR) - Performs a bitwise XOR operation. Pali: 'Released, free, separated.' - A bit-level distinction, where only those that differ remain 'free' or active."
+    },
+    "~": {
+      "pali": "Viparīta",
+      "description": "JS: `~` (Bitwise NOT) - Inverts all bits. Pali: 'Opposite, inverted, perverted.' - The complete inversion of all subtle essences."
+    },
+    "<<": {
+      "pali": "Vāma-Pāḷi",
+      "description": "JS: `<<` (Left Shift) - Shifts bits to the left. Pali: 'Left-leaning, left-edged.' - Shifting the essence to the left, increasing its magnitude by powers of two."
+    },
+    ">>": {
+      "pali": "Dakkhiṇa-Pāḷi",
+      "description": "JS: `>>` (Right Shift) - Shifts bits to the right (signed). Pali: 'Right-leaning, right-edged.' - Shifting the essence to the right, decreasing its magnitude while preserving sign."
+    },
+    ">>>": {
+      "pali": "Nir-Saññā-Pāḷi",
+      "description": "JS: `>>>` (Unsigned Right Shift) - Shifts bits to the right (unsigned, fills with zero). Pali: 'Sign-free-edge.' - Shifting the essence to the right, disregarding its sign and filling with pure voidness (zeros)."
+    },
+    "?.": {
+      "pali": "Sandeha-Anuvattana",
+      "description": "JS: `?.` (Optional Chaining) - Accesses object properties safely. Pali: 'Doubtful-following, conditional continuation.' - Continuing the path only if the existence is not doubtful or null."
+    },
+    "??": {
+      "pali": "Yathā-Sambhava",
+      "description": "JS: `??` (Nullish Coalescing) - Returns the right operand if the left is nullish. Pali: 'As far as possible, as it may happen.' - Choosing an alternative only if the primary path is truly empty or undefined, not just false."
+    },
+    "()": {
+      "pali": "Niggaha",
+      "description": "JS: `()` (Parentheses) - Function calls, grouping expressions, defining parameters. Pali: 'Restraint, seizing, embracing.' - Embracing and grouping expressions, or seizing control for a function's execution."
+    },
+    "[]": {
+      "pali": "Koṭṭhaka",
+      "description": "JS: `[]` (Brackets) - Array literals, property access. Pali: 'Container, cell, compartment.' - A container for a collection of elements, or accessing a specific compartment within an entity."
+    },
+    "{}": {
+      "pali": "Āyatana",
+      "description": "JS: `{}` (Curly Braces) - Block statements, object literals. Pali: 'Sphere, sense-base, abode.' - A self-contained sphere of influence (block), or an abode where properties reside (object)."
+    },
+    ";": {
+      "pali": "Virāma",
+      "description": "JS: `;` (Semicolon) - Terminates a statement. Pali: 'Cessation, stopping, pause.' - The pause or cessation at the end of a thought or action, marking its conclusion."
+    },
+    ",": {
+      "pali": "Sambandha",
+      "description": "JS: `,` (Comma) - Separates elements in a list, variables in declarations. Pali: 'Connection, relation, link.' - A connection or link between distinct elements in a sequence."
+    },
+    ".": {
+      "pali": "Aṅga",
+      "description": "JS: `.` (Dot) - Member access. Pali: 'Limb, part, component.' - Accessing a specific limb or component of a larger entity."
+    },
+    ":": {
+      "pali": "Saññā",
+      "description": "JS: `:` (Colon) - Separates property name from value in objects, or labels in switch. Pali: 'Sign, mark, designation.' - A mark or designation linking a name to its value, or defining a specific label."
+    },
+    "?": {
+      "pali": "Kacci",
+      "description": "JS: `?` (Ternary Operator, Optional Chaining) - Used for conditional expressions or optional chaining. Pali: 'Question particle.' - Posing a question, implying a conditional path or an uncertain existence."
+    },
+    "`": {
+      "pali": "Suttanta",
+      "description": "JS: ``` ` ``` (Backtick / Template Literal) - For template literals, allowing embedded expressions. Pali: 'Discourse, text, scripture.' - A special form of text or discourse that allows for embedded truths or expressions within it."
+    },
+    "=>": {
+      "pali": "Uppajjati",
+      "description": "JS: `=>` (Arrow Function) - A concise way to write functions. Pali: 'To arise, to be produced, to spring up.' - A swift and direct way for a function or action to arise or be produced."
+    },
+    "(": {
+      "pali": "Pārambha",
+      "description": "JS: `(` (Opening Parenthesis) - Initiates a function call, a group, or a parameter list. Pali: 'Beginning, commencement, initiation.' - The start of an action, a thought, or a list of offerings."
+    },
+    "[": {
+      "pali": "Pavaraṇa",
+      "description": "JS: `[` (Opening Bracket) - Initiates an array literal or property access. Pali: 'Invitation, invitation to make known.' - The opening of a container to invite elements in, or to make known a specific compartment."
+    },
+    "{": {
+      "pali": "Ārambha",
+      "description": "JS: `{` (Opening Curly Brace) - Initiates a code block or object literal. Pali: 'Commencement, undertaking, foundation.' - The commencement of a new sphere of influence, or the foundation of an object's abode."
+    },
+    "'": {
+      "pali": "Eka-Vacana",
+      "description": "JS: `'` (Opening Single Quote) - Initiates a string literal. Pali: 'Single utterance, single statement.' - The start of a single, defined utterance or statement."
+    },
+    "\"": {
+      "pali": "Dvi-Vacana",
+      "description": "JS: `\"` (Opening Double Quote) - Initiates a string literal. Pali: 'Double utterance, twofold statement.' - The start of a more emphasized or 'doubled' utterance or statement."
+    },
+    "`": {
+      "pali": "Suttanta-Mukhā",
+      "description": "JS: ``` ` ``` (Opening Backtick) - Initiates a template literal. Pali: 'Discourse-mouth, opening of scripture.' - The opening of a special discourse (template literal) where expressions can be directly woven in."
+    },
+    ")": {
+      "pali": "Pariyonāha",
+      "description": "JS: `)` (Closing Parenthesis) - Concludes a function call, a group, or a parameter list. Pali: 'Enclosure, completion, circumscribing.' - The completion or enclosure of an action, thought, or list."
+    },
+    "]": {
+      "pali": "Saṃvara",
+      "description": "JS: `]` (Closing Bracket) - Concludes an array literal or property access. Pali: 'Restraint, closing, enclosure.' - The restraint or closing of a container, completing its definition."
+    },
+    "}": {
+      "pali": "Paripuṇṇa",
+      "description": "JS: `}` (Closing Curly Brace) - Concludes a code block or object literal. Pali: 'Full, complete, fulfilled.' - The completion and fulfillment of a sphere of influence or an object's definition."
+    },
+    "'": {
+      "pali": "Eka-Vacana-Niṭṭhita",
+      "description": "JS: `'` (Closing Single Quote) - Concludes a string literal. Pali: 'Single utterance-finished.' - The completion of a single, defined utterance."
+    },
+    "\"": {
+      "pali": "Dvi-Vacana-Niṭṭhita",
+      "description": "JS: `\"` (Closing Double Quote) - Concludes a string literal. Pali: 'Double utterance-finished.' - The completion of a more emphasized or 'doubled' utterance."
+    },
+    "`": {
+      "pali": "Suttanta-Niṭṭhita",
+      "description": "JS: ``` ` ``` (Closing Backtick) - Concludes a template literal. Pali: 'Discourse-finished, scripture completed.' - The completion of a special discourse (template literal)."
+    }
+  }
+}
