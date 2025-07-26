@@ -13,5 +13,8 @@
   "license": "ISC",
   "bin": {
     "paliscript": "./index.js"
+  },
+  "dependencies": {
+    "open": "^10.2.0"
   }
 }
