@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pali (Thai Script)-JavaScript Bidirectional Converter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Use Sarabun for Thai text for better rendering */
+        .thai-text, .thai-text::placeholder {
+            font-family: 'Sarabun', sans-serif;
+        }
+        .output-container {
+            position: relative;
+        }
+        .play-button {
+            position: absolute;
+            bottom: 1rem;
+            right: 1rem;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <div class="container mx-auto p-4 md:p-8">
+        <header class="text-center mb-8">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900">Pali (Thai Script)-JavaScript Converter</h1>
+            <p class="text-md text-gray-600 mt-2">Translate between Pali (in Thai script) and JavaScript code, and listen to the output.</p>
+        </header>
+
+        <div class="bg-white rounded-xl shadow-lg p-6">
+            <!-- Controls -->
+            <div class="flex flex-col sm:flex-row justify-between items-center mb-6 space-y-4 sm:space-y-0">
+                <div class="flex items-center space-x-4">
+                    <label for="conversionType" class="text-lg font-medium">Conversion:</label>
+                    <select id="conversionType" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+                        <option value="pali2js" selected>Pali (Thai) to JavaScript</option>
+                        <option value="js2pali">JavaScript to Pali (Thai)</option>
+                    </select>
+                </div>
+                <button id="convertBtn" class="w-full sm:w-auto bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                    Convert
+                </button>
+            </div>
+
+            <!-- Input and Output Panels -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Input Panel -->
+                <div>
+                    <label for="input-text" class="text-lg font-semibold mb-2 block">Input</label>
+                    <textarea id="input-text" rows="12" class="w-full p-4 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 thai-text" placeholder="ป้อนข้อความของคุณที่นี่..."></textarea>
+                </div>
+
+                <!-- Output Panel -->
+                <div class="output-container">
+                    <label for="output-text" class="text-lg font-semibold mb-2 block">Output</label>
+                    <textarea id="output-text" rows="12" class="w-full p-4 border border-gray-300 rounded-lg bg-gray-50 focus:ring-2 focus:ring-blue-500 thai-text" readonly placeholder="ผลลัพธ์การแปลง..."></textarea>
+                    <button id="playBtn" class="play-button bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full shadow-lg transition-transform transform hover:scale-110">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- DOM Elements ---
+        const conversionTypeSelect = document.getElementById('conversionType');
+        const convertBtn = document.getElementById('convertBtn');
+        const playBtn = document.getElementById('playBtn');
+        const inputText = document.getElementById('input-text');
+        const outputText = document.getElementById('output-text');
+        
+        // Add 'thai-text' class to textareas for font styling
+        inputText.classList.add('thai-text');
+        outputText.classList.add('thai-text');
+
+        // --- Mappings will be loaded from JSON files ---
+        let paliToJsMap = {};
+        let jsToPaliMap = {};
+        
+        // Load mapping files
+        async function loadMappings() {
+            try {
+                // Load Thai Pali to JS mapping
+                const thPaliResponse = await fetch('./json/th-pali-js-key.json');
+                const thPaliData = await thPaliResponse.json();
+                
+                // Transform the data structure to match our needs
+                for (const [thPali, details] of Object.entries(thPaliData)) {
+                    paliToJsMap[thPali] = details.js;
+                }
+                
+                // Load JS to Thai Pali mapping
+                const jsResponse = await fetch('./json/js-pali-master.json');
+                const jsData = await jsResponse.json();
+                
+                // Transform the data structure to match our needs
+                for (const [js, details] of Object.entries(jsData)) {
+                    jsToPaliMap[js] = details['th-pali'];
+                }
+                
+                console.log('Mappings loaded successfully');
+                // Enable the convert button once mappings are loaded
+                convertBtn.disabled = false;
+            } catch (error) {
+                console.error('Error loading mappings:', error);
+                outputText.value = "Error loading mappings. Please try refreshing the page.";
+                convertBtn.disabled = true;
+            }
+        }
+        
+        // Load mappings when page loads
+        window.addEventListener('DOMContentLoaded', () => {
+            // Disable convert button until mappings are loaded
+            convertBtn.disabled = true;
+            loadMappings();
+        });
+
+        // --- Speech Synthesis ---
+        const synth = window.speechSynthesis;
+        let utterance = new SpeechSynthesisUtterance();
+        utterance.onend = () => {
+            console.log('Speech has finished.');
+        };
+        utterance.onerror = (event) => {
+            console.error('SpeechSynthesisUtterance.onerror', event);
+        };
+
+        // --- Functions ---
+
+        /**
+         * Escapes special characters in a string for use in a regular expression.
+         * @param {string} str - The string to escape.
+         * @returns {string} The escaped string.
+         */
+        function escapeRegExp(str) {
+            // Escape characters with special meaning in regular expressions.
+            return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+        }
+
+        /**
+         * Performs the text conversion based on the selected direction.
+         * @param {string} text - The input text.
+         * @param {string} direction - 'pali2js' or 'js2pali'.
+         * @returns {string} The converted text.
+         */
+        function convertText(text, direction) {
+            const map = direction === 'pali2js' ? paliToJsMap : jsToPaliMap;
+            // Create a regex to find all keys from the map, sorted by length descending.
+            // Keys that are special regex characters (like '(', ')') must be escaped.
+            const sortedKeys = Object.keys(map).sort((a, b) => b.length - a.length);
+            const escapedKeys = sortedKeys.map(key => escapeRegExp(key));
+            const regex = new RegExp(escapedKeys.join('|'), 'g');
+            
+            // Replace found keys with their corresponding values.
+            // The `matched` callback parameter will be the original unescaped string from the input.
+            return text.replace(regex, matched => map[matched]);
+        }
+
+
+        // --- Event Listeners ---
+        convertBtn.addEventListener('click', () => {
+            const direction = conversionTypeSelect.value;
+            const input = inputText.value;
+            if (!input.trim()) {
+                outputText.value = "Please enter some text to convert.";
+                return;
+            }
+            const result = convertText(input, direction);
+            outputText.value = result;
+        });
+
+        playBtn.addEventListener('click', () => {
+            if (synth.speaking) {
+                synth.cancel(); // Stop any currently playing speech
+            }
+            const textToSpeak = outputText.value;
+            if (textToSpeak.trim()) {
+                utterance.text = textToSpeak;
+                 
+                // If the output is Pali (Thai script), find a Thai voice.
+                if (conversionTypeSelect.value === 'js2pali') {
+                    // Find a Thai voice ('th-TH')
+                    let voice = synth.getVoices().find(v => v.lang === 'th-TH');
+                    if (voice) {
+                        utterance.voice = voice;
+                        utterance.lang = 'th-TH';
+                    } else {
+                        // Fallback to a default voice if no Thai voice is found
+                        console.warn("Thai voice not found, using default.");
+                        utterance.lang = 'en-US'; 
+                        utterance.voice = synth.getVoices().find(v => v.lang === 'en-US' && v.default);
+                    }
+                } else {
+                    // For JavaScript output, use an English voice.
+                    utterance.lang = 'en-US';
+                    utterance.voice = synth.getVoices().find(v => v.lang === 'en-US' && v.default);
+                }
+
+                synth.speak(utterance);
+            }
+        });
+         
+        // Populate voices list when they are loaded
+        // This is important as getVoices() can be empty on initial load.
+        synth.onvoiceschanged = () => {
+            const voices = synth.getVoices();
+            console.log("Available voices:", voices);
+        };
+
+    </script>
+</body>
+</html>
