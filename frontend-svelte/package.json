@@ -40,5 +40,8 @@
 		"onlyBuiltDependencies": [
 			"esbuild"
 		]
+	},
+	"dependencies": {
+		"@fontsource/charmonman": "^5.2.6"
 	}
 }
