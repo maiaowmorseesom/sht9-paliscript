@@ -461,11 +461,11 @@
     "phonetic-karaoke": "nip-pah-ri-yah-yah",
     "ipa": "nippɐrid͡ʒaːd͡ʒɐ"
   },
-  "WeakMap": {
-    "eng-pali": "dubbala-yuga",
-    "th-pali": "ทุพพละ-ยุคะ",
-    "phonetic-karaoke": "doop-bah-lah-yoo-gah",
-    "ipa": "d̪ubbɐlɐ-d͡ʒugɐ"
+  "Weak": {
+    "eng-pali": "dubbala",
+    "th-pali": "ทุพพละ",
+    "phonetic-karaoke": "doop-bah-lah",
+    "ipa": "d̪ubbɐlɐ"
   },
   "WeakSet": {
     "eng-pali": "dubbala-nippariyāya",
@@ -491,41 +491,41 @@
     "phonetic-karaoke": "dook-khah",
     "ipa": "d̪ukkhɐ"
   },
-  "EvalError": {
-    "eng-pali": "akkhāti-dukkha",
-    "th-pali": "อักขาติ-ทุกขะ",
-    "phonetic-karaoke": "uk-khah-ti-dook-khah",
-    "ipa": "ɐkkhaːt̪i-d̪ukkhɐ"
+  "Eval": {
+    "eng-pali": "akkhāti",
+    "th-pali": "อักขาติ",
+    "phonetic-karaoke": "uk-khah-ti",
+    "ipa": "ɐkkhaːt̪i"
   },
-  "RangeError": {
-    "eng-pali": "pariyāman-dukkha",
+  "Range": {
+    "eng-pali": "pariyāman",
     "th-pali": "ปริยามะนะ-ทุกขะ",
-    "phonetic-karaoke": "pah-ri-yah-mun-dook-khah",
-    "ipa": "pɐrid͡ʒaːmɐn-d̪ukkhɐ"
+    "phonetic-karaoke": "pah-ri-yah-mun",
+    "ipa": "pɐrid͡ʒaːmɐn"
   },
-  "ReferenceError": {
-    "eng-pali": "adhiṭṭhāna-dukkha",
-    "th-pali": "อธิฏฐานะ-ทุกขะ",
-    "phonetic-karaoke": "ah-tit-thah-nah-dook-khah",
-    "ipa": "ɐd̪̪ʱiʈʈhaːnɐ-d̪ukkhɐ"
+  "Reference": {
+    "eng-pali": "adhiṭṭhāna",
+    "th-pali": "อธิฏฐานะ",
+    "phonetic-karaoke": "ah-tit-thah-nah",
+    "ipa": "ɐd̪̪ʱiʈʈhaːnɐ"
   },
-  "SyntaxError": {
-    "eng-pali": "vyākaraṇa-dukkha",
+  "Syntax": {
+    "eng-pali": "vyākaraṇa",
     "th-pali": "วยากะระณะ-ทุกขะ",
-    "phonetic-karaoke": "wah-yah-kah-rah-nah-dook-khah",
-    "ipa": "ʋd͡ʒaːkɐrɐɳɐ-d̪ukkhɐ"
+    "phonetic-karaoke": "wah-yah-kah-rah-nah",
+    "ipa": "ʋd͡ʒaːkɐrɐɳɐ"
   },
-  "TypeError": {
-    "eng-pali": "jāti-dukkha",
-    "th-pali": "ชาติ-ทุกขะ",
-    "phonetic-karaoke": "jah-ti-dook-khah",
-    "ipa": "d͡ʒaːt̪i-d̪ukkhɐ"
+  "Type": {
+    "eng-pali": "jāti",
+    "th-pali": "ชาติ",
+    "phonetic-karaoke": "jah-ti",
+    "ipa": "d͡ʒaːt̪i"
   },
-  "URIError": {
-    "eng-pali": "magga-dukkha",
-    "th-pali": "มัคคะ-ทุกขะ",
-    "phonetic-karaoke": "muk-khah-dook-khah",
-    "ipa": "mɐggɐ-d̪ukkhɐ"
+  "URI": {
+    "eng-pali": "magga",
+    "th-pali": "มัคคะ",
+    "phonetic-karaoke": "muk-khah",
+    "ipa": "mɐggɐ"
   },
   "isNaN": {
     "eng-pali": "asaṅkhyeyo",
@@ -551,29 +551,23 @@
     "phonetic-karaoke": "oom-muk-khah-sung-kah-yah-gah-hah-nah",
     "ipa": "ummaːggɐ-sɐŋkhd͡ʒaː-gɐhɐnɐ"
   },
-  "encodeURI": {
-    "eng-pali": "magga-saṅketa",
-    "th-pali": "มัคคะ-สังเกตะ",
-    "phonetic-karaoke": "muk-khah-sung-kay-tah",
-    "ipa": "mɐggɐ-sɐŋkeːt̪ɐ"
+  "encode": {
+    "eng-pali": "saṅketa",
+    "th-pali": "สังเกตะ",
+    "phonetic-karaoke": "sung-kay-tah",
+    "ipa": "sɐŋkeːt̪ɐ"
   },
-  "decodeURI": {
-    "eng-pali": "magga-visaṅketa",
-    "th-pali": "มัคคะ-วิสังเกตะ",
-    "phonetic-karaoke": "muk-khah-wi-sung-kay-tah",
-    "ipa": "mɐggɐ-ʋisɐŋkeːt̪ɐ"
+  "decode": {
+    "eng-pali": "visaṅketa",
+    "th-pali": "วิสังเกตะ",
+    "phonetic-karaoke": "wi-sung-kay-tah",
+    "ipa": "ʋisɐŋkeːt̪ɐ"
   },
-  "encodeURIComponent": {
-    "eng-pali": "aṅga-saṅketa",
-    "th-pali": "อังคะ-สังเกตะ",
-    "phonetic-karaoke": "ung-gah-sung-kay-tah",
-    "ipa": "ɐŋgɐ-sɐŋkeːt̪ɐ"
-  },
-  "decodeURIComponent": {
-    "eng-pali": "aṅga-visaṅketa",
-    "th-pali": "อังคะ-วิสังเกตะ",
-    "phonetic-karaoke": "ung-gah-wi-sung-kay-tah",
-    "ipa": "ɐŋgɐ-ʋisɐŋkeːt̪ɐ"
+  "Component": {
+    "eng-pali": "aṅga",
+    "th-pali": "อังคะ",
+    "phonetic-karaoke": "ung-gah",
+    "ipa": "ɐŋgɐ"
   },
   "document": {
     "eng-pali": "patthaka",
@@ -659,39 +653,9 @@
     "phonetic-karaoke": "ah-tik-kah-mah",
     "ipa": "ɐt̪ikkɐmɐ"
   },
-  "yield*": {
-    "eng-pali": "nicjhāna-paṭinissagga",
-    "th-pali": "นิจฌานะ-ปฏินิสสัคคะ",
-    "phonetic-karaoke": "nit-jah-nah-pah-ti-nis-suk-kah",
-    "ipa": "nit͡ɕd̪͡ʒʱaːnɐ-pɐʈinissɐggɐ"
-  },
-  "import.meta": {
-    "eng-pali": "āharaṇa-attā",
-    "th-pali": "อาหรณะ-อัตตา",
-    "phonetic-karaoke": "ah-hah-rah-nah-ut-tah",
-    "ipa": "aːhɐrɐɳɐ-ɐt̪t̪aː"
-  },
   "=": {
-    "eng-pali": "saṃyojana",
-    "th-pali": "สังโยชน",
-    "phonetic-karaoke": "sung-yoh-jah-nah",
-    "ipa": "sɐŋd͡ʒoːd͡ʒɐnɐ"
-  },
-  "===": {
-    "eng-pali": "sama-sama-sama",
-    "th-pali": "สะมะ-สะมะ-สะมะ",
-    "phonetic-karaoke": "sah-mah-sah-mah-sah-mah",
-    "ipa": "sɐmɐ-sɐmɐ-sɐmɐ"
-  },
-  "!==": {
-    "eng-pali": "na-sama-sama-sama",
-    "th-pali": "นะ-สะมะ-สะมะ-สะมะ",
-    "phonetic-karaoke": "nah-sah-mah-sah-mah-sah-mah",
-    "ipa": "nɐ-sɐmɐ-sɐmɐ-sɐmɐ"
-  },
-  "==": {
     "eng-pali": "sama",
-    "th-pali": "สะมะ",
+    "th-pali": "สัมมา",
     "phonetic-karaoke": "sah-mah",
     "ipa": "sɐmɐ"
   },
@@ -731,24 +695,6 @@
     "phonetic-karaoke": "ah-wah-sit-thah",
     "ipa": "ɐʋɐsiʈʈhɐ"
   },
-  "**": {
-    "eng-pali": "bala-vaḍḍhati",
-    "th-pali": "พละ-วัฑฒะติ",
-    "phonetic-karaoke": "bah-lah-wut-tah-ti",
-    "ipa": "bɐlɐ-ʋɐɖɖhɐt̪i"
-  },
-  "++": {
-    "eng-pali": "paripūraṇa",
-    "th-pali": "ปริปูรณะ",
-    "phonetic-karaoke": "pah-ri-poo-rah-nah",
-    "ipa": "pɐripuːrɐɳɐ"
-  },
-  "--": {
-    "eng-pali": "upacaya",
-    "th-pali": "อุปจยะ",
-    "phonetic-karaoke": "oo-pah-jah-yah",
-    "ipa": "upɐt͡ɕɐd͡ʒɐ"
-  },
   ">": {
     "eng-pali": "adhika",
     "th-pali": "อธิกะ",
@@ -760,30 +706,6 @@
     "th-pali": "หีน",
     "phonetic-karaoke": "hee-nah",
     "ipa": "hiːnɐ"
-  },
-  ">=": {
-    "eng-pali": "adhika-vā-sama",
-    "th-pali": "อธิกะ-วา-สะมะ",
-    "phonetic-karaoke": "ah-ti-kah-wah-sah-mah",
-    "ipa": "ɐd̪̪ʱikɐ-ʋaː-sɐmɐ"
-  },
-  "<=": {
-    "eng-pali": "hīna-vā-sama",
-    "th-pali": "หีน-วา-สะมะ",
-    "phonetic-karaoke": "hee-nah-wah-sah-mah",
-    "ipa": "hiːnɐ-ʋaː-sɐmɐ"
-  },
-  "&&": {
-    "eng-pali": "ubho",
-    "th-pali": "อุโภ",
-    "phonetic-karaoke": "oo-boh",
-    "ipa": "ubʱoː"
-  },
-  "||": {
-    "eng-pali": "athavā",
-    "th-pali": "อถวา",
-    "phonetic-karaoke": "ah-tah-wah",
-    "ipa": "ɐt̪̪ʰɐʋaː"
   },
   "!": {
     "eng-pali": "na",
@@ -814,36 +736,6 @@
     "th-pali": "วิปะรีตะ",
     "phonetic-karaoke": "wi-pah-ree-tah",
     "ipa": "ʋipɐriːt̪ɐ"
-  },
-  "<<": {
-    "eng-pali": "vāma-pāli",
-    "th-pali": "วามะ-ปาลิ",
-    "phonetic-karaoke": "wah-mah-pah-li",
-    "ipa": "ʋaːmɐ-paːli"
-  },
-  ">>": {
-    "eng-pali": "dakkhiṇa-pāli",
-    "th-pali": "ทักขิณะ-ปาลิ",
-    "phonetic-karaoke": "duk-khi-nah-pah-li",
-    "ipa": "d̪ɐkkhiɳɐ-paːli"
-  },
-  ">>>": {
-    "eng-pali": "nira-sañña-pāli",
-    "th-pali": "นิร-สัญญะ-ปาลิ",
-    "phonetic-karaoke": "ni-rah-sun-yah-pah-li",
-    "ipa": "nirɐ-sɐɲɲɐ-paːli"
-  },
-  "?.": {
-    "eng-pali": "saṇdeha-anuvattana",
-    "th-pali": "สัณเฑหะ-อนุวัตตะนะ",
-    "phonetic-karaoke": "sun-day-hah-ah-noo-wut-tah-nah",
-    "ipa": "sɐɳd̪eːhɐ-ɐnuʋɐt̪t̪ɐnɐ"
-  },
-  "??": {
-    "eng-pali": "yathā-sambhava",
-    "th-pali": "ยถา-สัมภวะ",
-    "phonetic-karaoke": "yah-tah-sum-pah-wah",
-    "ipa": "d͡ʒɐt̪̪ʰaː-sɐmbʱɐʋɐ"
   },
   "(": {
     "eng-pali": "ārambha",
@@ -928,11 +820,5 @@
     "th-pali": "กัจจิ",
     "phonetic-karaoke": "kut-ji",
     "ipa": "kɐt͡ɕt͡ɕi"
-  },
-  "=>": {
-    "eng-pali": "uppajjati",
-    "th-pali": "อุปปัชชติ",
-    "phonetic-karaoke": "oop-put-jah-ti",
-    "ipa": "uppɐd͡ʒd͡ʒɐt̪i"
   }
 }
