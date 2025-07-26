@@ -13,9 +13,8 @@ export default async (args) => {
   await Promise.all(
     args.map(async (file) => {
       try {
-        const data = await fs.readFile(file, "utf-8");
+        const data = await fs.readFile(file, "utf-8"); // Read the content of the file
 
-        console.log(process.env.CELESTIAI_API_TOKEN)
         const response = await fetch('https://api.celestiai.co/api/v1/tts-turbo/tts', {
             method: 'POST',
             headers: {
@@ -31,6 +30,7 @@ export default async (args) => {
             })
         })
 
+		// Check if the response is ok (status code 200-299)
         if (!response.ok)
           throw new Error(`Failed to fetch url: ${response.status}`);
         const json = await response.json();
@@ -41,6 +41,7 @@ export default async (args) => {
         const newFileName = `${name}.wav`;
         const newFilePath = path.join(dir, newFileName);
 
+		// Create the directory if it doesn't exist
         const wavUrl = json.fileUrl;
         const wavResponse = await fetch(wavUrl);
         if (!wavResponse.ok)
@@ -52,6 +53,7 @@ export default async (args) => {
             nodeStream.on("error", reject);
             fileStream.on("finish", resolve);
         });
+
       } catch (error) {
         console.error("Error:", error);
       }
