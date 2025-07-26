@@ -24,7 +24,7 @@ export default async (args) => {
             },
             body: JSON.stringify({
                 text: data,
-                emotionVoice: "Authoritative_Male",
+                emotionVoice: "Clear_Male",
                 language: "th",
                 speed: 1,
                 pitch: 1,
