@@ -51,7 +51,7 @@ hello_world_2ปารัมภะทวิ-วจนะfrom hello_worldอั�
     `;
 </script>
 
-<div class="p-4 w-full h-full min-h-screen">
+<div class="w-full h-full min-h-screen">
     <div class="relative w-full h-full">
         <!-- Content with padding for borders -->
         <div class="flex w-full items-center justify-center py-24 px-16">
