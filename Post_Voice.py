@@ -1,6 +1,11 @@
 from pydub import AudioSegment
 from pydub.playback import play
 import numpy as np
+import http.server
+import socketserver
+import threading
+import os
+from urllib.parse import urlparse
 
 audio = AudioSegment.from_file("demo_js.wav")
 bell = AudioSegment.from_file("TTS/backgroundsound/bell.mp3")
@@ -49,12 +54,51 @@ def play_and_export(sound, filename, speed, gain, bg) :
     sound = sound.apply_gain(gain) # ปรับระดับเสียง
     if bg: # ถ้ามีเสียงพื้นหลัง
         sound = sound.overlay(bg) # ผสมกับเสียงพื้นหลัง
-    sound.export(filename, format="wav") # บันทึกไฟล์เสียง
-    # play(sound) # เล่นเสียง
-    # print(f"เสียงถูกบันทึกเป็น {filename} แล้ว")
+
+    # Create output directory if it doesn't exist
+    os.makedirs("audio_output", exist_ok=True)
+    output_path = f"audio_output/{filename}"
+
+    sound.export(output_path, format="wav") # บันทึกไฟล์เสียง
+    print(f"Audio saved: http://127.0.0.1:8000/{filename}")
+    return output_path
+
+# Custom HTTP handler to serve audio files
+class AudioHandler(http.server.SimpleHTTPRequestHandler):
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, directory="audio_output", **kwargs)
+
+    def end_headers(self):
+        self.send_header('Access-Control-Allow-Origin', '*')
+        self.send_header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS')
+        self.send_header('Access-Control-Allow-Headers', '*')
+        super().end_headers()
+
+def start_audio_server():
+    PORT = 8000
+    with socketserver.TCPServer(("", PORT), AudioHandler) as httpd:
+        print(f"Audio server running at http://127.0.0.1:{PORT}/")
+        httpd.serve_forever()
+
+# Start the server in a separate thread
+server_thread = threading.Thread(target=start_audio_server, daemon=True)
+server_thread.start()
 
 # เรียกใช้ฟังก์ชันเพื่อสร้างเสียงต้นฉบับและเสียง UIA
 play_and_export(audio, "original.wav", 10, -10, None)
 play_and_export(audio, "uia_audio.wav", -20, -5, uia)
 play_and_export(audio, "bg1.wav", 10, -10, bg1)
 play_and_export(audio, "bg3.wav", -20, -5, bg3)
+
+print("Audio files are now available at:")
+print("http://127.0.0.1:8000/original.wav")
+print("http://127.0.0.1:8000/uia_audio.wav")
+print("http://127.0.0.1:8000/bg1.wav")
+print("http://127.0.0.1:8000/bg3.wav")
+
+# Keep the server running
+try:
+    while True:
+        pass
+except KeyboardInterrupt:
+    print("\nServer stopped.")
