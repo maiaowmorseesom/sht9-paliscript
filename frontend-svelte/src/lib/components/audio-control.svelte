@@ -1,8 +1,10 @@
 <script lang="ts">
   import albumCoverDefault from '$lib/assets/album-cover.avif';
+  import albumCoverJapan from '$lib/assets/album-cover-japan.avif';
   import albumTexture from '$lib/assets/album-texture.avif';
   import albumCracks from '$lib/assets/album-cracks.avif';
   import vinyl from '$lib/assets/vinyl.avif';
+  import creators from '$lib/assets/creators.avif'
 
   let paused = $state(false);
   function togglePlayback() {
@@ -39,7 +41,7 @@
       value: 'japan',
       audioPath: 'bg3.wav',
       containterClasses: 'bg-red-900 text-white',
-      albumCoverUrl: 'https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg',
+      albumCoverUrl: albumCoverJapan,
     },
     {
       label: 'Piano',
@@ -58,40 +60,49 @@
   ]
 </script>
 
-<div class="w-full h-fit gap-4 flex flex-col text-white py-8 gap-y-6 {
+<div class="w-full h-fit gap-4 flex flex-col text-white gap-y-6 ">
+  <div class="flex flex-col justify-center items-center bg-amber-400 py-8">
+    <h2 class="text-3xl mb-4 font-bold font-charmonman">เจ้าภาพงานบุญ</h2>
+    <img alt="creators" src={creators} class="h-64">
+  </div>
+
+
+  <div class="h-fit gap-4 flex flex-col text-white gap-y-6 py-12 {
   activeTheme.containterClasses
 }">
-  <!-- <div class="flex w-full h-64 justify-center items-center bg-gray-400">
-    big stupid flexbox
-  </div> -->
-
-  <div class="flex justify-center items-center w-full px-8">
-    <div class="relative w-80 h-80">
-      <div id="album" class="relative top-0 left-0 h-full w-full">
-        <div id="cover-before" style="background-image: url({albumTexture});"></div>
-        <div id="cover" style="background-image: url({activeTheme.albumCoverUrl});">
-          <div id="print"></div>
-        </div>
-        <div id="cover-after" style="background-image: url({albumCracks});"></div>
-        <div id="vinyl" class={paused ? 'pausing' : 'playing'} style="background-image: url({vinyl});">
-          <div id="print"></div>
+    <div class="flex justify-center items-center w-full px-8  ">
+      <div class="relative w-80 h-80">
+        <div id="album" class="relative top-0 left-0 h-full w-full">
+          <div id="cover-before" style="background-image: url({albumTexture});"></div>
+          <div id="cover" style="background-image: url({activeTheme.albumCoverUrl});">
+            <div id="print"></div>
+          </div>
+          <div id="cover-after" style="background-image: url({albumCracks});"></div>
+          <div id="vinyl" class={paused ? 'pausing' : 'playing'} style="background-image: url({vinyl});">
+            <div id="print"></div>
+          </div>
         </div>
       </div>
     </div>
+
+    <div class="flex items-center justify-center gap-x-4">
+      <p class="text-2xl font-bold font-charmonman">ควบคุมการปลุกเสก</p>
+      <audio src={`${audioBasePath}/${activeTheme.audioPath}`} controls bind:paused></audio>
+    </div>
+
+      <div class="flex items-center justify-center gap-x-4">
+        <a href={`${audioBasePath}/${activeTheme.audioPath}`} class="text-xl font-charmonman px-6 py-4 bg-white outline rounded-md text-black">นิมนต์เสียงมาเจิมเครื่องคุณ</a>
+      </div>
+
+    <div class="flex items-center justify-center gap-x-4">
+      <select class="w-48" name="audioMix">
+        {#each alternateAudioMixes as mix}
+          <option value={mix.value} onclick={() => { activeTheme = mix }}>{mix.label}</option>
+        {/each}
+      </select>
+    </div>
   </div>
 
-  <div class="flex items-center justify-center gap-x-4">
-    <p class="text-2xl font-bold font-charmonman">ควบคุมการปลุกเสก</p>
-    <audio src={`${audioBasePath}/${activeTheme.audioPath}`} controls bind:paused></audio>
-  </div>
-
-  <div class="flex items-center justify-center gap-x-4">
-    <select class="w-48" name="audioMix">
-      {#each alternateAudioMixes as mix}
-        <option value={mix.value} onclick={() => { activeTheme = mix }}>{mix.label}</option>
-      {/each}
-    </select>
-  </div>
 </div>
 
 <svelte:head>
