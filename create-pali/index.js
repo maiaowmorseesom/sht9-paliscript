@@ -51,7 +51,7 @@ export default async (args) => {
         const processedData = convertText(data);
 
         const { dir, name } = path.parse(file);
-        const newFileName = `${name}.paliscript`;
+        const newFileName = `${name}.pali`;
         const newFilePath = path.join(dir, newFileName);
 
         await fs.writeFile(newFilePath, processedData);

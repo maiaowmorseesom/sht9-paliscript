@@ -19,21 +19,22 @@ function showHelp() {
   console.log("paliscript -cp [...files]         - Convert JS files to sacred Pali script");
   console.log("paliscript chant [...files]       - Create blessed voice of enchanted code");
   console.log("paliscript -c [...files]          - Create blessed voice of enchanted code");
-  console.log("paliscript run [...files.paliscript] - Run .paliscript files directly");
-  console.log("paliscript -r [...files.paliscript]  - Run .paliscript files directly");
+  console.log("paliscript [...files]             - Run .pali files directly");
+  console.log("paliscript run [...files.pali] - Run .pali files directly");
+  console.log("paliscript -r [...files.pali]  - Run .pali files directly");
   console.log("");
   console.log("Commands:");
   console.log("  create-pali: Convert JavaScript files to sacred Pali script");
   console.log("  chant: Generate blessed voice from JS or Pali files");
   console.log("         - JS files will be converted to Pali first");
   console.log("         - Only JS and Pali files can be blessed");
-  console.log("  run: Execute .paliscript files directly with Node.js");
+  console.log("  run: Execute .pali files directly with Node.js");
   console.log("       - Converts Pali to JavaScript behind the scenes");
   console.log("===================================================");
 }
 
-// Check if the first argument is a .paliscript file (for direct execution)
-if (args.length > 0 && args[0].endsWith('.paliscript')) {
+// Check if the first argument is a .pali file (for direct execution)
+if (args.length > 0 && args[0].endsWith('.pali')) {
   runPali(args);
 } else {
   // Handle commands
