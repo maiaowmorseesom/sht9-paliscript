@@ -36,11 +36,6 @@
 		"typescript-eslint": "^8.20.0",
 		"vite": "^7.0.4"
 	},
-	"pnpm": {
-		"onlyBuiltDependencies": [
-			"esbuild"
-		]
-	},
 	"dependencies": {
 		"@fontsource/charmonman": "^5.2.6"
 	}
