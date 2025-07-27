@@ -51,8 +51,8 @@ def play_and_export(sound, filename, speed, gain, bg) :
     sound = speeddown(sound, speed) # ปรับความเร็วเสียง
     sound = eq_n_reverb(sound) # เพิ่ม reverb effect
     sound = final_setting(sound) # ปรับระดับเสียงให้เหมาะสม
-    sound = sound.apply_gain(gain) # ปรับระดับเสียง
     if bg: # ถ้ามีเสียงพื้นหลัง
+        bg = bg.apply_gain(gain) # ปรับระดับเสียง
         sound = sound.overlay(bg) # ผสมกับเสียงพื้นหลัง
 
     # Create output directory if it doesn't exist
