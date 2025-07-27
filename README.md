@@ -1,6 +1,6 @@
 # Paliscript
 
-Holy Library to make your code support Pali language. Run .paliscript files directly with Node.js.
+Holy Library to make your code support Pali language. Run .pali files directly with Node.js.
 
 ## Installation
 
@@ -10,21 +10,21 @@ npm install -g sht9-paliscript
 
 ## Usage
 
-### Running .paliscript files
+### Running .pali files
 
-There are multiple ways to run .paliscript files:
+There are multiple ways to run .pali files:
 
 #### Method 1: Using the paliscript run command
 
 ```bash
-paliscript run your-file.paliscript
+paliscript run your-file.pali
 # or
-paliscript -r your-file.paliscript
+paliscript -r your-file.pali
 ```
 
 #### Method 2: Direct execution (with shebang)
 
-1. Add a shebang to the top of your .paliscript file:
+1. Add a shebang to the top of your .pali file:
 
 ```
 #!/usr/bin/env paliscript
@@ -33,21 +33,21 @@ paliscript -r your-file.paliscript
 2. Make your file executable:
 
 ```bash
-chmod +x your-file.paliscript
+chmod +x your-file.pali
 ```
 
 3. Run the file directly:
 
 ```bash
-./your-file.paliscript
+./your-file.pali
 ```
 
 #### Method 3: Direct invocation
 
-If your .paliscript file is the first argument, it will be executed automatically:
+If your .pali file is the first argument, it will be executed automatically:
 
 ```bash
-paliscript your-file.paliscript
+paliscript your-file.pali
 ```
 
 ### Converting JavaScript to Paliscript
@@ -58,7 +58,7 @@ paliscript create-pali your-file.js
 paliscript -cp your-file.js
 ```
 
-This will create a new file named `your-file.paliscript`.
+This will create a new file named `your-file.pali`.
 
 ### Chanting your code
 

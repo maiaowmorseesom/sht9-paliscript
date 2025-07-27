@@ -5,7 +5,7 @@
 
   const audioExtension = "wav";
   let paliscriptPath = $state('');
-  let audioPath = $derived(getAudioPath(paliscriptPath));
+  let audioBasePath = "http://localhost:8000";
   let paliscriptText = $state('');
   // let audioFile = $state('');
 
@@ -47,5 +47,5 @@
 
 <div class="w-full h-full min-h-screen grid grid-cols-2 gap-x-4 p-4">
   <ChantText text={paliscriptText} />
-  <AudioControl {audioPath} />
+  <AudioControl {audioBasePath} />
 </div>

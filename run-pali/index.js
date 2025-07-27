@@ -38,8 +38,8 @@ function convertPaliToJs(text) {
 }
 
 /**
- * Runs a .paliscript file by converting it to JavaScript and executing with Node.js
- * @param {string} filePath Path to the .paliscript file
+ * Runs a .pali file by converting it to JavaScript and executing with Node.js
+ * @param {string} filePath Path to the .pali file
  */
 async function runPaliScript(filePath) {
   try {
@@ -57,7 +57,7 @@ async function runPaliScript(filePath) {
       }
     }
 
-    // Read the .paliscript file
+    // Read the .pali file
     const paliContent = await fs.readFile(filePath, "utf-8");
     
     // Convert Pali to JavaScript
@@ -65,7 +65,7 @@ async function runPaliScript(filePath) {
     
     // Create a temporary JS file
     const tempDir = os.tmpdir();
-    const tempFilePath = path.join(tempDir, `${path.basename(filePath, '.paliscript')}_temp.js`);
+    const tempFilePath = path.join(tempDir, `${path.basename(filePath, '.pali')}_temp.js`);
     
     await fs.writeFile(tempFilePath, jsContent);
     
@@ -79,20 +79,20 @@ async function runPaliScript(filePath) {
       await fs.unlink(tempFilePath).catch(() => {});
     }
   } catch (error) {
-    console.error(`Error running .paliscript file: ${error.message}`);
+    console.error(`Error running .pali file: ${error.message}`);
     process.exit(1);
   }
 }
 
 export default async (args) => {
   if (!args || args.length === 0) {
-    console.error("Please provide a .paliscript file to run");
+    console.error("Please provide a .pali file to run");
     process.exit(1);
   }
   
   const filePath = args[0];
-  if (!filePath.endsWith('.paliscript')) {
-    console.error("File must have .paliscript extension");
+  if (!filePath.endsWith('.pali')) {
+    console.error("File must have .pali extension");
     process.exit(1);
   }
   

@@ -1,38 +1,66 @@
 <script lang="ts">
-  import albumCover from '$lib/assets/album-cover.avif';
+  import albumCoverDefault from '$lib/assets/album-cover.avif';
   import albumTexture from '$lib/assets/album-texture.avif';
   import albumCracks from '$lib/assets/album-cracks.avif';
   import vinyl from '$lib/assets/vinyl.avif';
 
   let paused = $state(false);
-
   function togglePlayback() {
     paused = !paused;
   }
 
-  const { audioPath } = $props();
+  const { audioBasePath, theme = '' } = $props();
 
-  const alternateAudioMixes = [
-    {
+  const defaultTheme = {
       label: 'Normal',
-      audioSuffix: '',
-    },
+      value: '',
+      audioPath: 'original.wav',
+      containterClasses: 'bg-gray-900 text-white',
+      albumCoverUrl: albumCoverDefault
+    };
+  let activeTheme = $state(defaultTheme);
+
+
+  $effect(() => {console.log(activeTheme)});
+
+  interface AlternateAudioMix{
+      label: string;
+      value: string;
+      audioPath: string;
+      containterClasses: string;
+      albumCoverUrl: string;
+  }[];
+
+
+  const alternateAudioMixes: AlternateAudioMix[] = [
+    defaultTheme,
     {
       label: 'Japan',
-      audioSuffix: '',
+      value: 'japan',
+      audioPath: 'bg3.wav',
+      containterClasses: 'bg-red-900 text-white',
+      albumCoverUrl: 'https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg',
     },
     {
       label: 'Piano',
-      audioSuffix: '',
+      value: 'piano',
+      audioPath: 'bg3.wav',
+      containterClasses: 'bg-indigo-900 text-white',
+      albumCoverUrl: 'https://upload.wikimedia.org/wikipedia/commons/0/01/Steinway_Vienna_002.JPG'
     },
     {
       label: 'Cat Cat',
-      audioSuffix: '',
+      value: 'catcat',
+      audioPath: 'uia_audio.wav',
+      containterClasses: 'bg-amber-700 text-white',
+      albumCoverUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/15/Cat_August_2010-4.jpg'
     },
   ]
 </script>
 
-<div class="w-full h-fit gap-4 flex flex-col bg-black/80 text-white py-8 gap-y-6">
+<div class="w-full h-fit gap-4 flex flex-col text-white py-8 gap-y-6 {
+  activeTheme.containterClasses
+}">
   <!-- <div class="flex w-full h-64 justify-center items-center bg-gray-400">
     big stupid flexbox
   </div> -->
@@ -41,7 +69,7 @@
     <div class="relative w-80 h-80">
       <div id="album" class="relative top-0 left-0 h-full w-full">
         <div id="cover-before" style="background-image: url({albumTexture});"></div>
-        <div id="cover" style="background-image: url({albumCover});">
+        <div id="cover" style="background-image: url({activeTheme.albumCoverUrl});">
           <div id="print"></div>
         </div>
         <div id="cover-after" style="background-image: url({albumCracks});"></div>
@@ -54,13 +82,13 @@
 
   <div class="flex items-center justify-center gap-x-4">
     <p class="text-2xl font-bold font-charmonman">ควบคุมการปลุกเสก</p>
-    <audio src={audioPath} controls bind:paused></audio>
+    <audio src={`${audioBasePath}/${activeTheme.audioPath}`} controls bind:paused></audio>
   </div>
 
   <div class="flex items-center justify-center gap-x-4">
-    <select class="w-48">
+    <select class="w-48" name="audioMix">
       {#each alternateAudioMixes as mix}
-        <option>{mix.label}</option>
+        <option value={mix.value} onclick={() => { activeTheme = mix }}>{mix.label}</option>
       {/each}
     </select>
   </div>
@@ -81,6 +109,7 @@
                     inset 0 0 10px 5px rgba(255,255,255,0.2),
               inset 0 0 4px 2px rgba(0,0,0,0.2);
         border-radius: 4px;
+        object-fit: cover;
       }
       #cover-before {
         position: absolute;
