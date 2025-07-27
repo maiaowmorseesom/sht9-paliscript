@@ -1,0 +1,1 @@
+import"../chunks/DsnmJJEf.js";import{m as t,n as i,o as n,q as e,r as p}from"../chunks/DLl5_3dh.js";var d=t('<div class="font-serif"><!></div>');function c(r,a){var o=d(),s=e(o);i(s,()=>a.children),p(o),n(r,o)}export{c as component};

@@ -7,20 +7,20 @@ function __memo(fn) {
 return {
 	appDir: "_app",
 	appPath: "_app",
-	assets: new Set(["favicon.svg"]),
-	mimeTypes: {".svg":"image/svg+xml"},
+	assets: new Set(["AngsanaNew.woff","AngsanaNew.woff2","favicon.svg"]),
+	mimeTypes: {".woff":"font/woff",".woff2":"font/woff2",".svg":"image/svg+xml"},
 	_: {
-		client: {start:"_app/immutable/entry/start.BBS3jyEJ.js",app:"_app/immutable/entry/app.FmmuVIw4.js",imports:["_app/immutable/entry/start.BBS3jyEJ.js","_app/immutable/chunks/AcT7AJbH.js","_app/immutable/chunks/xl7Y9oRY.js","_app/immutable/chunks/CHpdwjxu.js","_app/immutable/chunks/CIiAzNWF.js","_app/immutable/chunks/ChHW3xhn.js","_app/immutable/entry/app.FmmuVIw4.js","_app/immutable/chunks/CHpdwjxu.js","_app/immutable/chunks/CIiAzNWF.js","_app/immutable/chunks/DsnmJJEf.js","_app/immutable/chunks/xl7Y9oRY.js","_app/immutable/chunks/ChHW3xhn.js","_app/immutable/chunks/D9n1ONxM.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
+		client: {start:"_app/immutable/entry/start.BUdfrrTa.js",app:"_app/immutable/entry/app.xtL-Lp4i.js",imports:["_app/immutable/entry/start.BUdfrrTa.js","_app/immutable/chunks/DNnMQFsD.js","_app/immutable/chunks/BUVVZkht.js","_app/immutable/chunks/DLl5_3dh.js","_app/immutable/entry/app.xtL-Lp4i.js","_app/immutable/chunks/DLl5_3dh.js","_app/immutable/chunks/BUVVZkht.js","_app/immutable/chunks/DsnmJJEf.js","_app/immutable/chunks/Dj0ihnNm.js"],stylesheets:[],fonts:[],uses_env_dynamic_public:false},
 		nodes: [
-			__memo(() => import('./chunks/0-BgFGTRB4.js')),
-			__memo(() => import('./chunks/1-HSl4KnKE.js')),
-			__memo(() => import('./chunks/2-CLpwU_S9.js'))
+			__memo(() => import('./chunks/0-CWoBGo2O.js')),
+			__memo(() => import('./chunks/1-CTCWTKaX.js')),
+			__memo(() => import('./chunks/2-Bltsobah.js'))
 		],
 		routes: [
 			{
-				id: "/",
-				pattern: /^\/$/,
-				params: [],
+				id: "/[[audioMix]]",
+				pattern: /^(?:\/([^/]+))?\/?$/,
+				params: [{"name":"audioMix","optional":true,"rest":false,"chained":true}],
 				page: { layouts: [0,], errors: [1,], leaf: 2 },
 				endpoint: null
 			}
