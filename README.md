@@ -11,54 +11,16 @@ npm install -g sht9-paliscript
 ```
 
 # ⚙️ Usage
-### 🚀 Running .pali files
-There are multiple ways to run your sacred .pali files:
-
-#### 🧘‍♂️ Method 1: Paliscript CLI
+### 🚀 Running .pali files via Paliscript CLI
 
 ```bash
+paliscript your-file.pali
+# or
 paliscript run your-file.pali
 # or
 paliscript -r your-file.pali
 ```
 
-#### ⚔️ Method 2: Direct Execution (Shebang)
-
-1. Add a shebang to the top of your .pali file:
-
-```
-#!/usr/bin/env paliscript
-```
-
-2. Make your file executable:
-
-```bash
-chmod +x your-file.pali
-```
-
-3. Run the file directly:
-
-```bash
-./your-file.pali
-```
-
-#### 🔮 Method 3: Auto Execution
-
-If your .pali file is the first argument, it will be executed automatically:
-
-```bash
-paliscript your-file.pali
-```
-
-### 🔁 Convert JavaScript to PaliscriptConverting JavaScript to Paliscript
-
-```bash
-paliscript create-pali your-file.js
-# or
-paliscript -cp your-file.js
-```
-
-This will create a new file named `your-file.pali`.
 
 ### 🔊 Chant Your Code (Voice Synthesis)
 
@@ -79,8 +41,19 @@ http://localhost:5173 (จริงจังไม่ได้โม้)
 ```
 
 ### 📂 Examples
+Hello World written in JS and Pali language
 
-Check the `_example` directory for sample files.
+**JavaScript (example.js):**
+```javascript
+let str = "Hello World";
+console.log(str);
+```
+
+**Pali (example.pali):**
+```
+ฐปิตะ str สัมมา ทวิ-วจนะHello Worldทวิ-วจนะวิรามะ
+ธัมมะสักกะอังคะสนฺเทสปารัมภะstrปริโยนาหะวิรามะ
+```
 
 ## ⚖️ License
 
