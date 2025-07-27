@@ -7,6 +7,7 @@ import threading
 import os
 from urllib.parse import urlparse
 import sys
+import shutil
 
 def process_audio_file(file_path):
     """Process audio file from given path"""
@@ -86,7 +87,7 @@ class AudioHandler(http.server.SimpleHTTPRequestHandler):
 def start_audio_server():
     PORT = 8000
     with socketserver.TCPServer(("", PORT), AudioHandler) as httpd:
-        print(f"Audio server running at http://127.0.0.1:{PORT}/")
+        # print(f"Audio server running at http://127.0.0.1:{PORT}/")
         httpd.serve_forever()
 
 # Start the server in a separate thread
@@ -109,6 +110,8 @@ if __name__ == "__main__":
 
     if audio is not None:
         # เรียกใช้ฟังก์ชันเพื่อสร้างเสียงต้นฉบับและเสียง UIA
+        print("Please wait for the audio to process...")
+
         play_and_export(audio, "original.wav", 10, -10, None)
         play_and_export(audio, "uia_audio.wav", -20, -5, uia)
         play_and_export(audio, "bg1.wav", 10, -10, bg1)
@@ -120,7 +123,20 @@ if __name__ == "__main__":
         print("http://127.0.0.1:8000/bg1.wav")
         print("http://127.0.0.1:8000/bg3.wav")
 
-        print(f'Access ultra-amazing interface at http://localhost:5173/?paliscriptPath=http://localhost:3000/{os.path.basename(input_file_path).split(".")[0]}.paliscript')
+        source_paliscript_path = f'{os.path.basename(input_file_path).split(".")[0]}.pali'
+        source_paliscript_full_path = os.path.join(os.path.dirname(os.path.abspath(input_file_path)), source_paliscript_path)
+        # Copy the paliscript file to the audio_output folder if it exists
+        try:
+            if os.path.exists(source_paliscript_full_path):
+                dest_path = os.path.join("audio_output", source_paliscript_path)
+                shutil.copy(source_paliscript_full_path, dest_path)
+                print(f"Copied {source_paliscript_full_path} to audio_output folder")
+            else:
+                print(f"Warning: {source_paliscript_full_path} not found")
+        except Exception as e:
+            print(f"Error copying paliscript file: {e}")
+
+        print(f'Access ultra-amazing interface at http://localhost:4173/?paliscriptPath=http://localhost:8000/{source_paliscript_path}')
     else:
         print("Failed to process audio file.")
         sys.exit(1)
