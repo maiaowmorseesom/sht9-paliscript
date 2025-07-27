@@ -69,7 +69,7 @@ def play_and_export(sound, filename, speed, gain, bg) :
     output_path = f"audio_output/{filename}"
 
     sound.export(output_path, format="wav") # บันทึกไฟล์เสียง
-    print(f"Audio saved: http://127.0.0.1:8000/{filename}")
+    # print(f"Audio saved: http://127.0.0.1:8000/{filename}")
     return output_path
 
 # Custom HTTP handler to serve audio files
@@ -119,6 +119,8 @@ if __name__ == "__main__":
         print("http://127.0.0.1:8000/uia_audio.wav")
         print("http://127.0.0.1:8000/bg1.wav")
         print("http://127.0.0.1:8000/bg3.wav")
+
+        print(f'Access ultra-amazing interface at http://localhost:5173/?paliscriptPath=http://localhost:3000/{os.path.basename(input_file_path).split(".")[0]}.paliscript')
     else:
         print("Failed to process audio file.")
         sys.exit(1)
