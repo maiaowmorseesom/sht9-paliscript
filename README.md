@@ -7,8 +7,10 @@
 ## 📦 Installation
 
 ```bash
-npm install -g sht9-paliscript
+npm i @maiaowmorseesom/sht9-paliscript
 ```
+
+IF INSTALL GLOBALLY, INSTALL AT YOUR OWN RISK. EVEN FOR US OURSELVES, WE DO NOT TRUST OUR CODE.
 
 # ⚙️ Usage
 ### 🚀 Running .pali files via Paliscript CLI
