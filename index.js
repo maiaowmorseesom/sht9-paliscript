@@ -5,6 +5,8 @@ import frontend from "./frontend/index.js";
 import chant from "./chant/index.js";
 import runPali from "./run-pali/index.js";
 import path from "path";
+import { exec } from "child_process";
+import open from "open";
 
 const args = process.argv.slice(2);
 const command = args[0];
@@ -64,7 +66,10 @@ if (args.length > 0 && args[0].endsWith('.pali')) {
       break;
     default:
       if (!command) {
-        frontend();
+        open("http://localhost:4173");
+        exec("npm --prefix ./frontend-svelte run preview", {
+          stdout: "inherit",
+        });
       } else {
         console.log(`Unknown command: ${command}`);
         showHelp();
