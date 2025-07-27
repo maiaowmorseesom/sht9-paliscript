@@ -6,16 +6,25 @@ import socketserver
 import threading
 import os
 from urllib.parse import urlparse
+import sys
 
-audio = AudioSegment.from_file("demo_js.wav")
-bell = AudioSegment.from_file("TTS/backgroundsound/bell.mp3")
-bg1 = AudioSegment.from_file("TTS/backgroundsound/bg1.mp3")
-uia = AudioSegment.from_file("TTS/backgroundsound/uia.mp3")
-bg3 = AudioSegment.from_file("TTS/backgroundsound/bg3.mp3")
+def process_audio_file(file_path):
+    """Process audio file from given path"""
+    try:
+        audio = AudioSegment.from_file(file_path)
+        bell = AudioSegment.from_file("TTS/backgroundsound/bell.mp3")
+        bg1 = AudioSegment.from_file("TTS/backgroundsound/bg1.mp3")
+        uia = AudioSegment.from_file("TTS/backgroundsound/uia.mp3")
+        bg3 = AudioSegment.from_file("TTS/backgroundsound/bg3.mp3")
 
-audio = audio.set_channels(1) # เพื่อความง่ายในการประมวลผล, แปลงเป็น mono
-audio = audio.set_frame_rate(44100) # กำหนด frame rate มาตรฐาน
-bell = bell.fade_out(2000) # เพิ่ม fade out 2 วินาที
+        audio = audio.set_channels(1) # เพื่อความง่ายในการประมวลผล, แปลงเป็น mono
+        audio = audio.set_frame_rate(44100) # กำหนด frame rate มาตรฐาน
+        bell = bell.fade_out(2000) # เพิ่ม fade out 2 วินาที
+
+        return audio, bell, bg1, uia, bg3
+    except Exception as e:
+        print(f"Error loading audio file {file_path}: {e}")
+        return None, None, None, None, None
 
 #speed(pitch) setting
 def speeddown(sound, speed) :
@@ -84,17 +93,35 @@ def start_audio_server():
 server_thread = threading.Thread(target=start_audio_server, daemon=True)
 server_thread.start()
 
-# เรียกใช้ฟังก์ชันเพื่อสร้างเสียงต้นฉบับและเสียง UIA
-play_and_export(audio, "original.wav", 10, -10, None)
-play_and_export(audio, "uia_audio.wav", -20, -5, uia)
-play_and_export(audio, "bg1.wav", 10, -10, bg1)
-play_and_export(audio, "bg3.wav", -20, -5, bg3)
+# Main execution
+if __name__ == "__main__":
+    # Check if file path is provided as command line argument
+    if len(sys.argv) > 1:
+        input_file_path = sys.argv[1]
+    else:
+        # Default fallback or ask for input
+        input_file_path = input("Enter the path to the audio file: ").strip()
+        if not input_file_path:
+            input_file_path = "demo_js.wav"  # fallback to original
 
-print("Audio files are now available at:")
-print("http://127.0.0.1:8000/original.wav")
-print("http://127.0.0.1:8000/uia_audio.wav")
-print("http://127.0.0.1:8000/bg1.wav")
-print("http://127.0.0.1:8000/bg3.wav")
+    # Process the audio file
+    audio, bell, bg1, uia, bg3 = process_audio_file(input_file_path)
+
+    if audio is not None:
+        # เรียกใช้ฟังก์ชันเพื่อสร้างเสียงต้นฉบับและเสียง UIA
+        play_and_export(audio, "original.wav", 10, -10, None)
+        play_and_export(audio, "uia_audio.wav", -20, -5, uia)
+        play_and_export(audio, "bg1.wav", 10, -10, bg1)
+        play_and_export(audio, "bg3.wav", -20, -5, bg3)
+
+        print("Audio files are now available at:")
+        print("http://127.0.0.1:8000/original.wav")
+        print("http://127.0.0.1:8000/uia_audio.wav")
+        print("http://127.0.0.1:8000/bg1.wav")
+        print("http://127.0.0.1:8000/bg3.wav")
+    else:
+        print("Failed to process audio file.")
+        sys.exit(1)
 
 # Keep the server running
 try:
