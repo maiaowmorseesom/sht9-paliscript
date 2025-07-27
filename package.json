@@ -1,14 +1,14 @@
 {
   "name": "sht9-paliscript",
   "version": "1.0.0",
-  "description": "Holy Library",
+  "description": "Holy Library to make your code support Pali language",
   "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/maiaowmorseesom/sht9-paliscript.git"
   },
   "keywords": [
-    "holy"
+    "holy", "pali", "bless", "sht9", "sht9-paliscript", "paliscript"
   ],
   "author": "maiaowmorseesom",
   "license": "ISC",
