@@ -3,7 +3,7 @@
     import ChantText from "$lib/components/chant-text.svelte";
     import { onMount } from "svelte";
 
-  const audioExtension = "mp3";
+  const audioExtension = "wav";
   let paliscriptPath = $state('');
   let audioPath = $derived(getAudioPath(paliscriptPath));
   let paliscriptText = $state('');
@@ -47,5 +47,5 @@
 
 <div class="w-full h-full min-h-screen grid grid-cols-2 gap-x-4 p-4">
   <ChantText text={paliscriptText} />
-  <AudioControl audioSrc={audioPath} />
+  <AudioControl {audioPath} />
 </div>

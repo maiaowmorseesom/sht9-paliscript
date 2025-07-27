@@ -16,7 +16,11 @@
   "author": "maiaowmorseesom",
   "license": "ISC",
   "bin": {
-    "paliscript": "./index.js"
+    "paliscript": "./index.js",
+    "paliscript-run": "./bin/paliscript"
+  },
+  "scripts": {
+    "postinstall": "node install.js"
   },
   "dependencies": {
     "dotenv": "^17.2.1",
