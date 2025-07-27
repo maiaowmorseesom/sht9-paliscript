@@ -784,5 +784,11 @@
     "js": "?",
     "phonetic-karaoke": "kut-ji",
     "ipa": "kɐt͡ɕt͡ɕi"
+  },
+  "sandeso": {
+    "th-pali": "สนฺเทส",
+    "js": "log",
+    "phonetic-karaoke": "son-de-thes",
+    "ipa": "S̄n-thes̄"
   }
 }
