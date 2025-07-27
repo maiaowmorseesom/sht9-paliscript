@@ -11,13 +11,18 @@
     "url": "git+https://github.com/maiaowmorseesom/sht9-paliscript.git"
   },
   "keywords": [
-    "holy", "pali", "bless", "sht9", "sht9-paliscript", "paliscript"
+    "holy",
+    "pali",
+    "bless",
+    "sht9",
+    "sht9-paliscript",
+    "paliscript"
   ],
   "author": "maiaowmorseesom",
   "license": "ISC",
   "bin": {
-    "paliscript": "./index.js",
-    "paliscript-run": "./bin/paliscript"
+    "paliscript": "index.js",
+    "paliscript-run": "bin/paliscript.js"
   },
   "scripts": {
     "postinstall": "node install.js"
