@@ -57,9 +57,9 @@ hello_world_2ปารัมภะทวิ-วจนะfrom hello_worldอั�
         <!-- Content with padding for borders -->
         <div class="flex w-full items-center justify-center py-24 px-16">
             <div class="prose w-full">
-                <h1 class="text-center text-blue-800">บทนมัสการอันศักด์สิทธิ์</h1>
-                <p class="text-center text-blue-800 text-base/[2.5]">{text}</p>
-                <h2 class="text-center text-blue-800">สาธุ</h2>
+                <h1 class="text-center text-blue-800 font-charmonman">บทนมัสการอันศักด์สิทธิ์</h1>
+                <p class="text-center text-blue-800 text-lg">{text}</p>
+                <h2 class="text-center text-blue-800 font-charmonman">สาธุ</h2>
             </div>
         </div>
 

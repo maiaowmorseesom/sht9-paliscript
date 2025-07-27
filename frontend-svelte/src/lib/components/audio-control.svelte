@@ -4,19 +4,40 @@
   import albumCracks from '$lib/assets/album-cracks.avif';
   import vinyl from '$lib/assets/vinyl.avif';
 
-  let isPlaying = false;
+  let paused = $state(false);
 
   function togglePlayback() {
-    isPlaying = !isPlaying;
+    paused = !paused;
   }
+
+  const { audioPath } = $props();
+
+  const alternateAudioMixes = [
+    {
+      label: 'Normal',
+      audioSuffix: '',
+    },
+    {
+      label: 'Japan',
+      audioSuffix: '',
+    },
+    {
+      label: 'Piano',
+      audioSuffix: '',
+    },
+    {
+      label: 'Cat Cat',
+      audioSuffix: '',
+    },
+  ]
 </script>
 
-<div class="w-full h-full gap-4 flex flex-col">
-  <div class="flex w-full h-64 justify-center items-center bg-gray-400">
+<div class="w-full h-fit gap-4 flex flex-col bg-black/80 text-white py-8 gap-y-6">
+  <!-- <div class="flex w-full h-64 justify-center items-center bg-gray-400">
     big stupid flexbox
-  </div>
+  </div> -->
 
-  <div class="flex justify-center items-center w-full bg-black/80 px-8 py-16">
+  <div class="flex justify-center items-center w-full px-8">
     <div class="relative w-80 h-80">
       <div id="album" class="relative top-0 left-0 h-full w-full">
         <div id="cover-before" style="background-image: url({albumTexture});"></div>
@@ -24,27 +45,25 @@
           <div id="print"></div>
         </div>
         <div id="cover-after" style="background-image: url({albumCracks});"></div>
-        <div id="vinyl" class={isPlaying ? 'playing' : 'pausing'} style="background-image: url({vinyl});">
+        <div id="vinyl" class={paused ? 'pausing' : 'playing'} style="background-image: url({vinyl});">
           <div id="print"></div>
         </div>
       </div>
     </div>
   </div>
 
-  <div class="flex items-center justify-center">
-    <button
-      class="bg-white/80 hover:bg-white text-black border rounded-md p-3 shadow-lg transition-all"
-      on:click={togglePlayback}
-      aria-label={isPlaying ? 'Pause' : 'Play'}
-    >
-      {#if isPlaying}
-        หยุดปลุกเสก
-      {:else}
-        เริ่มปลุกเสก
-      {/if}
-    </button>
+  <div class="flex items-center justify-center gap-x-4">
+    <p class="text-2xl font-bold font-charmonman">ควบคุมการปลุกเสก</p>
+    <audio src={audioPath} controls bind:paused></audio>
   </div>
 
+  <div class="flex items-center justify-center gap-x-4">
+    <select class="w-48">
+      {#each alternateAudioMixes as mix}
+        <option>{mix.label}</option>
+      {/each}
+    </select>
+  </div>
 </div>
 
 <svelte:head>
