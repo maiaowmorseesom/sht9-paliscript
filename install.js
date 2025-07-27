@@ -22,15 +22,15 @@ async function install() {
     
     console.log('✅ Installation completed successfully');
     console.log('');
-    console.log('To run .paliscript files directly:');
+    console.log('To run .pali files directly:');
     console.log('1. Add the bin directory to your PATH:');
     console.log(`   export PATH="$PATH:${binDir}"`);
-    console.log('2. Make your .paliscript file executable:');
-    console.log('   chmod +x your-file.paliscript');
-    console.log('3. Add a shebang to the top of your .paliscript file:');
+    console.log('2. Make your .pali file executable:');
+    console.log('   chmod +x your-file.pali');
+    console.log('3. Add a shebang to the top of your .pali file:');
     console.log('   #!/usr/bin/env paliscript');
     console.log('');
-    console.log('Or simply run: paliscript run your-file.paliscript');
+    console.log('Or simply run: paliscript run your-file.pali');
   } catch (error) {
     console.error('❌ Installation failed:', error.message);
     process.exit(1);
