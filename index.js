@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 
-import { exec } from "child_process";
 import createPali from "./create-pali/index.js";
+import frontend from "./frontend/index.js";
 import chant from "./chant/index.js";
-import open from "open";
 
 const args = process.argv.slice(2);
 const command = args[0];
@@ -11,10 +10,7 @@ const options = args.slice(1);
 
 // On no arg
 if (args.length === 0) {
-  exec("npm --prefix ./frontend-svelte run preview", {
-    stdio: "inherit",
-  });
-  open(`http://localhost:4173`);
+  frontend();
 }
 // on args
 else {
