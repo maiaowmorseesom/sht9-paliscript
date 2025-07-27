@@ -1,6 +1,7 @@
 <script lang="ts">
   import albumCoverDefault from '$lib/assets/album-cover.avif';
   import albumCoverJapan from '$lib/assets/album-cover-japan.avif';
+  import albumCoverPiano from '$lib/assets/album-cover-piano.avif';
   import albumTexture from '$lib/assets/album-texture.avif';
   import albumCracks from '$lib/assets/album-cracks.avif';
   import vinyl from '$lib/assets/vinyl.avif';
@@ -39,7 +40,7 @@
     {
       label: 'Japan',
       value: 'japan',
-      audioPath: 'bg3.wav',
+      audioPath: 'bg1.wav',
       containterClasses: 'bg-red-900 text-white',
       albumCoverUrl: albumCoverJapan,
     },
@@ -48,7 +49,7 @@
       value: 'piano',
       audioPath: 'bg3.wav',
       containterClasses: 'bg-indigo-900 text-white',
-      albumCoverUrl: 'https://upload.wikimedia.org/wikipedia/commons/0/01/Steinway_Vienna_002.JPG'
+      albumCoverUrl: albumCoverPiano
     },
     {
       label: 'Cat Cat',
