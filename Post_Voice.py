@@ -8,6 +8,9 @@ import os
 from urllib.parse import urlparse
 import sys
 import shutil
+import concurrent.futures
+
+PORT = 8000
 
 def process_audio_file(file_path):
     """Process audio file from given path"""
@@ -85,7 +88,6 @@ class AudioHandler(http.server.SimpleHTTPRequestHandler):
         super().end_headers()
 
 def start_audio_server():
-    PORT = 8000
     with socketserver.TCPServer(("", PORT), AudioHandler) as httpd:
         # print(f"Audio server running at http://127.0.0.1:{PORT}/")
         httpd.serve_forever()
@@ -109,13 +111,35 @@ if __name__ == "__main__":
     audio, bell, bg1, uia, bg3 = process_audio_file(input_file_path)
 
     if audio is not None:
-        # เรียกใช้ฟังก์ชันเพื่อสร้างเสียงต้นฉบับและเสียง UIA
+        # เรียกใช้ฟังก์ชันเพื่อสร้างเสียงต้นฉบับและเสียงต่างๆ แบบ concurrent
         print("Please wait for the audio to process...")
 
-        play_and_export(audio, "original.wav", 10, -10, None)
-        play_and_export(audio, "uia_audio.wav", -20, -5, uia)
-        play_and_export(audio, "bg1.wav", 10, -10, bg1)
-        play_and_export(audio, "bg3.wav", -20, -5, bg3)
+        # Define the processing tasks
+        tasks = [
+            ("original.wav", 10, -10, None),
+            ("uia_audio.wav", -20, -5, uia),
+            ("bg1.wav", 10, -10, bg1),
+            ("bg3.wav", -20, -5, bg3)
+        ]
+
+        # Process files concurrently
+        output_paths = []
+        with concurrent.futures.ThreadPoolExecutor() as executor:
+            # Submit all tasks to the executor
+            future_to_filename = {
+                executor.submit(play_and_export, audio, filename, speed, gain, bg): filename
+                for filename, speed, gain, bg in tasks
+            }
+
+            # Process results as they complete
+            for future in concurrent.futures.as_completed(future_to_filename):
+                filename = future_to_filename[future]
+                try:
+                    output_path = future.result()
+                    output_paths.append(output_path)
+                    print(f"Processed: {filename}")
+                except Exception as e:
+                    print(f"Error processing {filename}: {e}")
 
         print("Audio files are now available at:")
         print("http://127.0.0.1:8000/original.wav")
@@ -136,7 +160,7 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"Error copying paliscript file: {e}")
 
-        print(f'Access ultra-amazing interface at http://localhost:4173/?paliscriptPath=http://localhost:8000/{source_paliscript_path}')
+        print(f'Access ultra-amazing interface at http://localhost:4173/?paliscriptPath=http://localhost:{PORT}/{source_paliscript_path}')
     else:
         print("Failed to process audio file.")
         sys.exit(1)
