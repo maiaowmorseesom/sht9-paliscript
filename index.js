@@ -11,8 +11,8 @@ const options = args.slice(1);
 // Display help message
 function showHelp() {
   console.log("================= paliscript help =================");
-  console.log("paliscript                - Launch the web frontend");
-  console.log("paliscript help, -h,      - Show this help message");
+  console.log("paliscript                        - Launch the web frontend");
+  console.log("paliscript help, -h               - Show this help message");
   console.log("paliscript create-pali [...files] - Convert JS files to sacred Pali script");
   console.log("paliscript chant [...files]       - Create blessed voice of enchanted code");
   console.log("");
