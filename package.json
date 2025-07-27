@@ -3,7 +3,7 @@
   "workspaces": [
     "frontend-svelte"
   ],
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Holy Library to make your code support Pali language",
   "type": "module",
   "repository": {
