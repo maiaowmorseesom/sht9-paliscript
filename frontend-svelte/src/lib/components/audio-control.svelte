@@ -2,6 +2,7 @@
   import albumCoverDefault from '$lib/assets/album-cover.avif';
   import albumCoverJapan from '$lib/assets/album-cover-japan.avif';
   import albumCoverPiano from '$lib/assets/album-cover-piano.avif';
+  import albumCoverCatcat from '$lib/assets/album-cover-catcat.avif';
   import albumTexture from '$lib/assets/album-texture.avif';
   import albumCracks from '$lib/assets/album-cracks.avif';
   import vinyl from '$lib/assets/vinyl.avif';
@@ -56,7 +57,7 @@
       value: 'catcat',
       audioPath: 'uia_audio.wav',
       containterClasses: 'bg-amber-700 text-white',
-      albumCoverUrl: 'https://upload.wikimedia.org/wikipedia/commons/1/15/Cat_August_2010-4.jpg'
+      albumCoverUrl: albumCoverCatcat
     },
   ]
 </script>
