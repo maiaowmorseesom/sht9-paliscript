@@ -14,7 +14,9 @@ function showHelp() {
   console.log("paliscript                        - Launch the web frontend");
   console.log("paliscript help, -h               - Show this help message");
   console.log("paliscript create-pali [...files] - Convert JS files to sacred Pali script");
+  console.log("paliscript -cp [...files]         - Convert JS files to sacred Pali script");
   console.log("paliscript chant [...files]       - Create blessed voice of enchanted code");
+  console.log("paliscript -c [...files]          - Create blessed voice of enchanted code");
   console.log("");
   console.log("Commands:");
   console.log("  create-pali: Convert JavaScript files to sacred Pali script");
@@ -36,10 +38,12 @@ else {
     case "-h":
       showHelp();
       break;
+    case "-cp":
     case "create-pali": {
       createPali(options);
       break;
     }
+    case "-c":
     case "chant": {
       chant(options);
       break;
