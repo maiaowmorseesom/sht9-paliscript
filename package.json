@@ -1,5 +1,5 @@
 {
-  "name": "sht9-paliscript",
+  "name": "@maiaowmorseesom/sht9-paliscript",
   "workspaces": [
     "frontend-svelte"
   ],
